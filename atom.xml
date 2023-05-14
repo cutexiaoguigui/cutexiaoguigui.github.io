@@ -6,7 +6,7 @@
   <link href="https://cutexiaoguigui.github.io/atom.xml" rel="self"/>
   
   <link href="https://cutexiaoguigui.github.io/"/>
-  <updated>2023-05-14T09:05:36.618Z</updated>
+  <updated>2023-05-14T09:18:00.517Z</updated>
   <id>https://cutexiaoguigui.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://cutexiaoguigui.github.io/2023/05/14/hexo%E7%AB%99%E7%82%B9seo%E4%BC%98%E5%8C%96/"/>
     <id>https://cutexiaoguigui.github.io/2023/05/14/hexo%E7%AB%99%E7%82%B9seo%E4%BC%98%E5%8C%96/</id>
     <published>2023-05-14T09:00:00.000Z</published>
-    <updated>2023-05-14T09:05:36.618Z</updated>
+    <updated>2023-05-14T09:18:00.517Z</updated>
     
     <content type="html"><![CDATA[<h1 id="hexo的SEO优化"><a href="#hexo的SEO优化" class="headerlink" title="hexo的SEO优化"></a>hexo的SEO优化</h1><p>之前介绍了hexo建站，这期我将为大家介绍网站的SEO优化，具体如下。</p><ul><li><h2 id="配置站点标题和描述"><a href="#配置站点标题和描述" class="headerlink" title="配置站点标题和描述"></a>配置站点标题和描述</h2></li></ul><p>在站点的<code>_config.yml</code>文件中设置<code>title</code>和<code>description</code>，如下所示：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">My</span> <span class="string">Hexo</span> <span class="string">Site</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">This</span> <span class="string">is</span> <span class="string">my</span> <span class="string">Hexo</span> <span class="string">site.</span></span><br></pre></td></tr></table></figure><ul><li><h2 id="配置关键词"><a href="#配置关键词" class="headerlink" title="配置关键词"></a>配置关键词</h2></li></ul><p>在站点的<code>_config.yml</code>文件中设置<code>keywords</code>，如下所示：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">hexo,</span> <span class="string">blog,</span> <span class="string">seo</span></span><br></pre></td></tr></table></figure><ul><li><h2 id="使用合适的主题"><a href="#使用合适的主题" class="headerlink" title="使用合适的主题"></a>使用合适的主题</h2></li></ul><p>选择支持SEO的主题，并根据需要自定义主题样式以提高可读性和搜索引擎友好度。</p><ul><li><h2 id="生成sitemap-xml文件"><a href="#生成sitemap-xml文件" class="headerlink" title="生成sitemap.xml文件"></a>生成sitemap.xml文件</h2></li></ul><p>安装<code>hexo-generator-sitemap</code>插件，使用以下命令进行安装：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure><p>在站点的<code>_config.yml</code>文件中配置插件：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="attr">sitemap:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">sitemap.xml</span></span><br></pre></td></tr></table></figure><ul><li><h2 id="生成robots-txt文件"><a href="#生成robots-txt文件" class="headerlink" title="生成robots.txt文件"></a>生成robots.txt文件</h2></li></ul><p>安装<code>hexo-generator-robotstxt</code>插件，使用以下命令进行安装：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-robotstxt --save</span><br></pre></td></tr></table></figure><p>在站点的<code>_config.yml</code>文件中配置插件：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="attr">robots_txt:</span></span><br><span class="line">  <span class="attr">disallow:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">/admin/</span></span><br></pre></td></tr></table></figure><ul><li><h2 id="优化文章内容"><a href="#优化文章内容" class="headerlink" title="优化文章内容"></a>优化文章内容</h2></li><li><p>标题要简明扼要，包含关键词</p></li><li><p>内容结构清晰，使用标题、段落等标签</p></li><li><p>描述准确，鼓励用户点击进入</p></li><li><p>图片使用alt属性描述</p></li><li><p>避免大量重复内容</p></li><li><h2 id="使用CDN加速"><a href="#使用CDN加速" class="headerlink" title="使用CDN加速"></a>使用CDN加速</h2></li></ul><p>使用CDN可以加快网站访问速度，提高用户体验。</p><ul><li><h2 id="使用HTTPS协议"><a href="#使用HTTPS协议" class="headerlink" title="使用HTTPS协议"></a>使用HTTPS协议</h2></li></ul><p>使用HTTPS可以提高网站安全性，并且有利于SEO排名。在站点的<code>_config.yml</code>文件中配置如下所示：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">https://example.com/</span></span><br></pre></td></tr></table></figure>]]></content>
     
@@ -38,7 +38,7 @@
     
     <category term="介绍" scheme="https://cutexiaoguigui.github.io/tags/%E4%BB%8B%E7%BB%8D/"/>
     
-    <category term="官方" scheme="https://cutexiaoguigui.github.io/tags/%E5%AE%98%E6%96%B9/"/>
+    <category term="说明" scheme="https://cutexiaoguigui.github.io/tags/%E8%AF%B4%E6%98%8E/"/>
     
   </entry>
   
@@ -47,7 +47,7 @@
     <link href="https://cutexiaoguigui.github.io/2023/05/14/hexo%E5%BB%BA%E7%AB%99/"/>
     <id>https://cutexiaoguigui.github.io/2023/05/14/hexo%E5%BB%BA%E7%AB%99/</id>
     <published>2023-05-14T01:00:00.000Z</published>
-    <updated>2023-05-14T07:38:56.861Z</updated>
+    <updated>2023-05-14T09:18:01.548Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Hexo建站"><a href="#Hexo建站" class="headerlink" title="Hexo建站"></a>Hexo建站</h1><p>这期我将为大家介绍一种建站方式，hexo建站，我们的龟之飞就是用hexo所搭建的静态网站，具体如下。</p><ul><li><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><ul><li><p>Hexo是一个快速、简洁的博客框架</p></li><li><p>使用Node.js编写</p></li><li><p>支持Markdown</p></li><li><p>静态网站生成器</p><span id="more"></span></li></ul></li><li><h2 id="安装与配置"><a href="#安装与配置" class="headerlink" title="安装与配置"></a>安装与配置</h2><ul><li>安装Node.js</li><li>安装Hexo命令行工具: <code>npm install -g hexo-cli</code></li><li>创建博客项目: <code>hexo init &lt;folder&gt;</code></li><li>进入项目文件夹: <code>cd &lt;folder&gt;</code></li><li>安装依赖: <code>npm install</code></li></ul></li><li><h2 id="操作与管理（所有命令除修改配置文件外均须在Git-Bash中使用）"><a href="#操作与管理（所有命令除修改配置文件外均须在Git-Bash中使用）" class="headerlink" title="操作与管理（所有命令除修改配置文件外均须在Git Bash中使用）"></a>操作与管理（所有命令除修改配置文件外均须在Git Bash中使用）</h2><ul><li><p>新建文章: <code>hexo new [layout] &lt;title&gt;</code></p></li><li><p>生成静态文件: <code>hexo generate</code> 或 <code>hexo g</code></p></li><li><p>启动本地服务器: <code>hexo server</code> 或 <code>hexo s</code></p></li><li><p>部署到远程服务器: <code>hexo deploy</code> 或 <code>hexo d</code></p><ul><li>在Github上创建一个新仓库，命名为username.github.io，其中username是你的Github账户名。</li><li>安装hexo-deployer-git插件，在Hexo博客根目录下打开Git Bash并执行以下命令：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></li><li>修改Hexo配置文件_config.yml，将deploy改为：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:username/username.github.io.git(二选一)</span><br><span class="line">  branch: master/main (看你github仓库中的分支，二选一)</span><br></pre></td></tr></table></figure>其中repo中的username改成你的Github账户名。</li><li>生成并部署博客，在Hexo博客根目录下执行以下命令：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure></li><li>等待部署完成后，在浏览器中输入 <a href="https://username.github.io/">https://username.github.io</a> 即可访问你的博客。</li></ul></li><li><p>清除缓存和已生成的静态文件: <code>hexo clean</code></p><ul><li>当部署至云端后若无变化或存在问题，则可尝试运行。</li></ul></li></ul></li><li><h2 id="主题与插件"><a href="#主题与插件" class="headerlink" title="主题与插件"></a>主题与插件</h2><ul><li>Hexo支持自定义主题</li><li>拥有丰富的插件生态系统</li><li>可以通过修改配置文件<code>_config.yml</code>来更改主题设置</li><li>可以在<code>package.json</code>中添加插件依赖并使用<code>npm install</code>安装</li></ul></li><li><h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><ul><li>支持多种部署方式，如GitHub Pages、GitLab Pages等</li><li>配置部署信息在<code>_config.yml</code>文件中</li><li>使用<code>hexo deploy</code>命令进行部署</li></ul></li><li><h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><ul><li>快速生成静态网站</li><li>易于定制和扩展</li><li>支持Markdown语法</li><li>丰富的主题和插件</li></ul></li><li><h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2><ul><li>不适合动态内容和实时交互的网站</li><li>需要了解Node.js和前端技术进行高度定制</li></ul></li></ul>]]></content>
     
@@ -70,7 +70,7 @@
     
     <category term="介绍" scheme="https://cutexiaoguigui.github.io/tags/%E4%BB%8B%E7%BB%8D/"/>
     
-    <category term="官方" scheme="https://cutexiaoguigui.github.io/tags/%E5%AE%98%E6%96%B9/"/>
+    <category term="说明" scheme="https://cutexiaoguigui.github.io/tags/%E8%AF%B4%E6%98%8E/"/>
     
   </entry>
   
@@ -104,13 +104,13 @@
     <published>2023-04-29T04:00:00.000Z</published>
     <updated>2023-05-03T05:44:26.351Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h1><h2 id="介绍我自己"><a href="#介绍我自己" class="headerlink" title="介绍我自己"></a>介绍我自己</h2><blockquote><p>xiaogui lives in china</p></blockquote><p>姓名：龟龟<br>年龄：青春年华<br>现居：广州<br>邮箱：<a href="mailto:&#x78;&#105;&#97;&#111;&#103;&#117;&#x69;&#116;&#117;&#114;&#116;&#108;&#x65;&#64;&#x31;&#54;&#x33;&#x2e;&#x63;&#x6f;&#x6d;">&#x78;&#105;&#97;&#111;&#103;&#117;&#x69;&#116;&#117;&#114;&#116;&#108;&#x65;&#64;&#x31;&#54;&#x33;&#x2e;&#x63;&#x6f;&#x6d;</a><br>属相：兔  </p><span id="more"></span><blockquote><p>兔属相代表着机智、细心、温柔和谨慎，兔子是十二生肖中最具有亲和力的动物之一，善于倾听和关怀他人。 </p></blockquote><p><img src="/yuxuaner.ico" alt="龟龟" title="可爱的龟"></p><h2 id="介绍龟之飞"><a href="#介绍龟之飞" class="headerlink" title="介绍龟之飞"></a>介绍龟之飞</h2><p><a href="https://cutexiaoguigui.github.io/2023/04/29/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E9%BE%9F%E4%B9%8B%E9%A3%9E%EF%BC%81/" title="龟之飞">龟之飞介绍</a></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h1><h2 id="介绍我自己"><a href="#介绍我自己" class="headerlink" title="介绍我自己"></a>介绍我自己</h2><blockquote><p>xiaogui lives in china</p></blockquote><p>姓名：龟龟<br>年龄：青春年华<br>现居：广州<br>邮箱：<a href="mailto:&#x78;&#105;&#x61;&#111;&#x67;&#x75;&#105;&#x74;&#117;&#114;&#x74;&#x6c;&#101;&#64;&#49;&#54;&#x33;&#46;&#99;&#111;&#109;">&#x78;&#105;&#x61;&#111;&#x67;&#x75;&#105;&#x74;&#117;&#114;&#x74;&#x6c;&#101;&#64;&#49;&#54;&#x33;&#46;&#99;&#111;&#109;</a><br>属相：兔  </p><span id="more"></span><blockquote><p>兔属相代表着机智、细心、温柔和谨慎，兔子是十二生肖中最具有亲和力的动物之一，善于倾听和关怀他人。 </p></blockquote><p><img src="/yuxuaner.ico" alt="龟龟" title="可爱的龟"></p><h2 id="介绍龟之飞"><a href="#介绍龟之飞" class="headerlink" title="介绍龟之飞"></a>介绍龟之飞</h2><p><a href="https://cutexiaoguigui.github.io/2023/04/29/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E9%BE%9F%E4%B9%8B%E9%A3%9E%EF%BC%81/" title="龟之飞">龟之飞介绍</a></p>]]></content>
     
     
     <summary type="html">&lt;h1 id=&quot;关于我&quot;&gt;&lt;a href=&quot;#关于我&quot; class=&quot;headerlink&quot; title=&quot;关于我&quot;&gt;&lt;/a&gt;关于我&lt;/h1&gt;&lt;h2 id=&quot;介绍我自己&quot;&gt;&lt;a href=&quot;#介绍我自己&quot; class=&quot;headerlink&quot; title=&quot;介绍我自己&quot;&gt;&lt;/a&gt;介绍我自己&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;xiaogui lives in china&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;姓名：龟龟&lt;br&gt;年龄：青春年华&lt;br&gt;现居：广州&lt;br&gt;邮箱：&lt;a href=&quot;mailto:&amp;#x78;&amp;#105;&amp;#97;&amp;#111;&amp;#103;&amp;#117;&amp;#x69;&amp;#116;&amp;#117;&amp;#114;&amp;#116;&amp;#108;&amp;#x65;&amp;#64;&amp;#x31;&amp;#54;&amp;#x33;&amp;#x2e;&amp;#x63;&amp;#x6f;&amp;#x6d;&quot;&gt;&amp;#x78;&amp;#105;&amp;#97;&amp;#111;&amp;#103;&amp;#117;&amp;#x69;&amp;#116;&amp;#117;&amp;#114;&amp;#116;&amp;#108;&amp;#x65;&amp;#64;&amp;#x31;&amp;#54;&amp;#x33;&amp;#x2e;&amp;#x63;&amp;#x6f;&amp;#x6d;&lt;/a&gt;&lt;br&gt;属相：兔  &lt;/p&gt;</summary>
+&lt;p&gt;姓名：龟龟&lt;br&gt;年龄：青春年华&lt;br&gt;现居：广州&lt;br&gt;邮箱：&lt;a href=&quot;mailto:&amp;#x78;&amp;#105;&amp;#x61;&amp;#111;&amp;#x67;&amp;#x75;&amp;#105;&amp;#x74;&amp;#117;&amp;#114;&amp;#x74;&amp;#x6c;&amp;#101;&amp;#64;&amp;#49;&amp;#54;&amp;#x33;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&quot;&gt;&amp;#x78;&amp;#105;&amp;#x61;&amp;#111;&amp;#x67;&amp;#x75;&amp;#105;&amp;#x74;&amp;#117;&amp;#114;&amp;#x74;&amp;#x6c;&amp;#101;&amp;#64;&amp;#49;&amp;#54;&amp;#x33;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&lt;/a&gt;&lt;br&gt;属相：兔  &lt;/p&gt;</summary>
     
     
     
@@ -144,9 +144,9 @@
     <category term="龟之飞官方" scheme="https://cutexiaoguigui.github.io/categories/%E9%BE%9F%E4%B9%8B%E9%A3%9E%E5%AE%98%E6%96%B9/"/>
     
     
-    <category term="官方" scheme="https://cutexiaoguigui.github.io/tags/%E5%AE%98%E6%96%B9/"/>
-    
     <category term="说明" scheme="https://cutexiaoguigui.github.io/tags/%E8%AF%B4%E6%98%8E/"/>
+    
+    <category term="官方" scheme="https://cutexiaoguigui.github.io/tags/%E5%AE%98%E6%96%B9/"/>
     
   </entry>
   
