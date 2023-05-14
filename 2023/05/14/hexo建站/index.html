@@ -100,7 +100,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">353</span>
+            <span class="post-count">562</span>
         </span>
     </span>
 
@@ -109,7 +109,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">1 分钟</span>
+            <span class="post-count">2 分钟</span>
         </span>
     </span>
 </div>
@@ -145,12 +145,28 @@
 <li>安装依赖: <code>npm install</code></li>
 </ul>
 </li>
-<li><h2 id="操作与管理"><a href="#操作与管理" class="headerlink" title="操作与管理"></a>操作与管理</h2><ul>
-<li>新建文章: <code>hexo new [layout] &lt;title&gt;</code></li>
-<li>生成静态文件: <code>hexo generate</code> 或 <code>hexo g</code></li>
-<li>启动本地服务器: <code>hexo server</code> 或 <code>hexo s</code></li>
-<li>部署到远程服务器: <code>hexo deploy</code> 或 <code>hexo d</code></li>
-<li>清除缓存和已生成的静态文件: <code>hexo clean</code></li>
+<li><h2 id="操作与管理（所有命令除修改配置文件外均须在Git-Bash中使用）"><a href="#操作与管理（所有命令除修改配置文件外均须在Git-Bash中使用）" class="headerlink" title="操作与管理（所有命令除修改配置文件外均须在Git Bash中使用）"></a>操作与管理（所有命令除修改配置文件外均须在Git Bash中使用）</h2><ul>
+<li><p>新建文章: <code>hexo new [layout] &lt;title&gt;</code></p>
+</li>
+<li><p>生成静态文件: <code>hexo generate</code> 或 <code>hexo g</code></p>
+</li>
+<li><p>启动本地服务器: <code>hexo server</code> 或 <code>hexo s</code></p>
+</li>
+<li><p>部署到远程服务器: <code>hexo deploy</code> 或 <code>hexo d</code></p>
+<ul>
+<li>在Github上创建一个新仓库，命名为username.github.io，其中username是你的Github账户名。</li>
+<li>安装hexo-deployer-git插件，在Hexo博客根目录下打开Git Bash并执行以下命令：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></li>
+<li>修改Hexo配置文件_config.yml，将deploy改为：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:username/username.github.io.git(二选一)</span><br><span class="line">  branch: master/main (看你github仓库中的分支，二选一)</span><br></pre></td></tr></table></figure>
+其中repo中的username改成你的Github账户名。</li>
+<li>生成并部署博客，在Hexo博客根目录下执行以下命令：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure></li>
+<li>等待部署完成后，在浏览器中输入<a target="_blank" rel="noopener" href="http://username.github.io即可访问你的博客./">http://username.github.io即可访问你的博客。</a></li>
+</ul>
+</li>
+<li><p>清除缓存和已生成的静态文件: <code>hexo clean</code></p>
+<ul>
+<li>当部署至云端后若无变化或存在问题，则可尝试运行。</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><h2 id="主题与插件"><a href="#主题与插件" class="headerlink" title="主题与插件"></a>主题与插件</h2><ul>
