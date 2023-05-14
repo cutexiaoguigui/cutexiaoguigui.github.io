@@ -1,6 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>hexo建站</title>
+    <url>/2023/05/14/hexo%E5%BB%BA%E7%AB%99/</url>
+    <content><![CDATA[<h1 id="Hexo建站"><a href="#Hexo建站" class="headerlink" title="Hexo建站"></a>Hexo建站</h1><p>这期我将为大家介绍一种建站方式，hexo建站，我们的龟之飞就是用hexo所搭建的静态网站，具体如下。</p>
+<ul>
+<li><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><ul>
+<li><p>Hexo是一个快速、简洁的博客框架</p>
+</li>
+<li><p>使用Node.js编写</p>
+</li>
+<li><p>支持Markdown</p>
+</li>
+<li><p>静态网站生成器</p>
+<span id="more"></span></li>
+</ul>
+</li>
+<li><h2 id="安装与配置"><a href="#安装与配置" class="headerlink" title="安装与配置"></a>安装与配置</h2><ul>
+<li>安装Node.js</li>
+<li>安装Hexo命令行工具: <code>npm install -g hexo-cli</code></li>
+<li>创建博客项目: <code>hexo init &lt;folder&gt;</code></li>
+<li>进入项目文件夹: <code>cd &lt;folder&gt;</code></li>
+<li>安装依赖: <code>npm install</code></li>
+</ul>
+</li>
+<li><h2 id="操作与管理"><a href="#操作与管理" class="headerlink" title="操作与管理"></a>操作与管理</h2><ul>
+<li>新建文章: <code>hexo new [layout] &lt;title&gt;</code></li>
+<li>生成静态文件: <code>hexo generate</code> 或 <code>hexo g</code></li>
+<li>启动本地服务器: <code>hexo server</code> 或 <code>hexo s</code></li>
+<li>部署到远程服务器: <code>hexo deploy</code> 或 <code>hexo d</code></li>
+<li>清除缓存和已生成的静态文件: <code>hexo clean</code></li>
+</ul>
+</li>
+<li><h2 id="主题与插件"><a href="#主题与插件" class="headerlink" title="主题与插件"></a>主题与插件</h2><ul>
+<li>Hexo支持自定义主题</li>
+<li>拥有丰富的插件生态系统</li>
+<li>可以通过修改配置文件<code>_config.yml</code>来更改主题设置</li>
+<li>可以在<code>package.json</code>中添加插件依赖并使用<code>npm install</code>安装</li>
+</ul>
+</li>
+<li><h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><ul>
+<li>支持多种部署方式，如GitHub Pages、GitLab Pages等</li>
+<li>配置部署信息在<code>_config.yml</code>文件中</li>
+<li>使用<code>hexo deploy</code>命令进行部署</li>
+</ul>
+</li>
+<li><h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><ul>
+<li>快速生成静态网站</li>
+<li>易于定制和扩展</li>
+<li>支持Markdown语法</li>
+<li>丰富的主题和插件</li>
+</ul>
+</li>
+<li><h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2><ul>
+<li>不适合动态内容和实时交互的网站</li>
+<li>需要了解Node.js和前端技术进行高度定制</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>介绍</tag>
+        <tag>官方</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于我</title>
+    <url>/2023/04/29/%E5%85%B3%E4%BA%8E%E6%88%91/</url>
+    <content><![CDATA[<h1 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h1><h2 id="介绍我自己"><a href="#介绍我自己" class="headerlink" title="介绍我自己"></a>介绍我自己</h2><blockquote>
+<p>xiaogui lives in china</p>
+</blockquote>
+<p>姓名：龟龟<br>年龄：青春年华<br>现居：广州<br>邮箱：<a href="mailto:&#120;&#x69;&#x61;&#111;&#103;&#117;&#x69;&#116;&#x75;&#114;&#x74;&#x6c;&#101;&#64;&#x31;&#x36;&#51;&#x2e;&#99;&#x6f;&#x6d;">&#120;&#x69;&#x61;&#111;&#103;&#117;&#x69;&#116;&#x75;&#114;&#x74;&#x6c;&#101;&#64;&#x31;&#x36;&#51;&#x2e;&#99;&#x6f;&#x6d;</a><br>属相：兔  </p>
+<span id="more"></span>
+
+<blockquote>
+<p>兔属相代表着机智、细心、温柔和谨慎，兔子是十二生肖中最具有亲和力的动物之一，善于倾听和关怀他人。 </p>
+</blockquote>
+<p><img src="/yuxuaner.ico" alt="龟龟" title="可爱的龟"></p>
+<h2 id="介绍龟之飞"><a href="#介绍龟之飞" class="headerlink" title="介绍龟之飞"></a>介绍龟之飞</h2><p><a href="https://cutexiaoguigui.github.io/2023/04/29/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E9%BE%9F%E4%B9%8B%E9%A3%9E%EF%BC%81/" title="龟之飞">龟之飞介绍</a></p>
+]]></content>
+      <categories>
+        <category>龟之飞官方</category>
+      </categories>
+      <tags>
+        <tag>介绍</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>五一游记</title>
+    <url>/2023/05/03/%E4%BA%94%E4%B8%80%E6%B8%B8%E8%AE%B0/</url>
+    <content><![CDATA[<h1 id="五一游记"><a href="#五一游记" class="headerlink" title="五一游记"></a>五一游记</h1><p>五一放假我决定出去旅行，体验一下不同的生活。这次我选择了去“<a href="http://www.shelarigu.com/" title="好玩哦！">熹乐谷</a>”。  </p>
+<span id="more"></span>
+
+<h2 id="温泉"><a href="#温泉" class="headerlink" title="温泉"></a>温泉</h2><p>第一天下午，我来到了当地最著名的温泉度假酒店。当我踏进温泉池塘时，仿佛置身于一片湖泊之中，水面静谧无声，波光粼粼。池塘周围是一片郁郁葱葱的竹林，摇曳着轻盈的枝叶。温泉里面有一股能缓解疲劳的力量，就如同放在太阳底下的雪球一样，可以轻松地融化掉你身上的疲惫和压力。  </p>
+<p>其中有一座高处的温泉池，像一座城堡般屹立在山腰之上，俯瞰着整个小县城。在上面泡澡时，能够欣赏到美丽的风景同时感受微风拂面，真的好像是一个仙境。  </p>
+<p><img src="https://ts1.cn.mm.bing.net/th/id/R-C.c061e54efa7b6bd66c53c5fd1225330b?rik=lzJ37vSEKe4Bdg&riu=http://www.shelarigu.com/vancheerfile/images/2020/6/20200611043621213.jpg&ehk=WDItudnl43PCL2kYxp0StXSiNbrm9VmHH5DnNNFU070=&risl=&pid=ImgRaw&r=0" alt="温泉" title="好看"></p>
+<h2 id="游泳"><a href="#游泳" class="headerlink" title="游泳"></a>游泳</h2><p>第二天早上，我前往了当地的水上乐园，在那里我体验了各种水上游戏。其中最刺激的是漂流河，它像一条蜿蜒的小溪，在我身边流淌着。当我漂流在其中时，感觉自己就像一只小舟，被涛声拍打着向前驶去。这里没有任何的规则和束缚，脑海中只有眼前的水流和心情的起伏，让人忘记时间的存在。  </p>
+<p>还有一个水上的游戏叫做“跳水”，它就像一场冒险，让人兴奋不已。站在高台上，四周尽是喧闹的欢呼声和嬉笑声，当我跳下去时，感觉整个世界都在颤抖。然后一头扎进水中，朦胧中见到有各种各样的鱼游过来，真的无比惊奇。  </p>
+<p><img src="https://img.jinmalvyou.com/20200909/a74a8caeb28144d4bf50eaf7d68bb5e2.jpg" alt="水上乐园" title="好玩"></p>
+<h2 id="美食"><a href="#美食" class="headerlink" title="美食"></a>美食</h2><p>旅行的最后一天，我品尝了当地的美食。街头巷尾散发出阵阵诱人的香味，仿佛可以闻到美食的气息。  </p>
+<p>我首先尝试了当地特色的烤鱼，它的鱼肉鲜嫩，口感滑爽，香气浓郁。烤鱼店的老板还会特别加入秘制的调味料，让它更加美味可口。  </p>
+<p>另外还有一道名为 “老婆饼”的小吃，它口感酥脆，内馅甜润。就像我小时候的梦想，外表看起来很简单，但里面包容了许多复杂的感情和经历。  </p>
+<p><img src="https://img.zcool.cn/community/0159fa5d809c24a8012060be8f47b1.jpg@1280w_1l_2o_100sh.jpg" alt="老婆饼" title="美味">  </p>
+<h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p>这趟旅行丰富了我的生活体验，就像一次充满活力和刺激的探险，让我感受到了世界的多样性。</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>游记</tag>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>龟之飞</title>
+    <url>/2023/04/29/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E9%BE%9F%E4%B9%8B%E9%A3%9E%EF%BC%81/</url>
+    <content><![CDATA[<h1 id="欢迎来到“龟之飞”"><a href="#欢迎来到“龟之飞”" class="headerlink" title="欢迎来到“龟之飞”"></a>欢迎来到“龟之飞”</h1><p>欢迎大家来到我的博客网站“龟之飞”！这里是一个充满活力和创意的社区，我们致力于分享各种有趣的技术和艺术内容。</p>
+<h2 id="关于我们"><a href="#关于我们" class="headerlink" title="关于我们"></a>关于我们</h2><p>作为一个博客网站，我们提供了一个轻松愉悦的阅读环境，让大家可以尽情地分享和创作自己的想法和经验。在这里，您可以看到来自全球各地的作者们分享的各种有趣、有趣的故事和经验——从科技和编程到设计和生活方式，再到文化和旅行等等。  </p>
+<h2 id="使用说明"><a href="#使用说明" class="headerlink" title="使用说明"></a>使用说明</h2><p>本站使用侧边栏来导航，拥有多样化的功能：可以对文章评论、搜索文章、查看动态等。若您想深入了解，可以前往 <a href="https://cutexiaoguigui.github.io/2023/04/29/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" title="使用说明">龟之飞使用说明</a> 了解更多。</p>
+<h2 id="设计理念"><a href="#设计理念" class="headerlink" title="设计理念"></a>设计理念</h2><p>我们的网站在设计上力求简单和易用，让读者可以更加专注于内容本身。我们采用了响应式布局，使得网站可以自适应不同的屏幕大小，从而在桌面电脑、平板电脑和智能手机上都能够获得最佳的视觉效果和用户体验。</p>
+<p>此外，我们的网站还提供了一些方便的功能，例如评论区和社交分享按钮等。这些功能可以帮助读者更好地互动和分享内容，同时也为作者们提供了反馈和支持。</p>
+<h2 id="加入我们"><a href="#加入我们" class="headerlink" title="加入我们"></a>加入我们</h2><p>如果您是一个具有创意和独立思考能力的作者，我们非常欢迎您来加入我们的社区。在这里，您可以享受到自由创作的乐趣，同时也可以结识各种有趣的朋友和同行。</p>
+<p>如果您是一个对各种各样的技术和艺术感兴趣的读者，我们同样欢迎您的加入和支持。在这里，您可以找到各种有趣的内容，并与作者们互动和交流。</p>
+<p>总之，“龟之飞”是一个充满活力和创意的博客网站，我们期待与您一起探索更多的可能性。如果您有任何建议或意见，请随时与我们联系。感谢您的支持，祝您在“龟之飞”度过愉快的时光！</p>
+]]></content>
+      <categories>
+        <category>龟之飞官方</category>
+      </categories>
+      <tags>
+        <tag>介绍</tag>
+        <tag>官方</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>使用说明</title>
     <url>/2023/04/29/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</url>
     <content><![CDATA[<h1 id="龟之飞网站使用说明"><a href="#龟之飞网站使用说明" class="headerlink" title="龟之飞网站使用说明"></a>龟之飞网站使用说明</h1><p>龟之飞是一个博客网站，以下是如何使用该网站的详细说明：</p>
@@ -43,74 +178,6 @@
       <tags>
         <tag>官方</tag>
         <tag>说明</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>龟之飞</title>
-    <url>/2023/04/29/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E9%BE%9F%E4%B9%8B%E9%A3%9E%EF%BC%81/</url>
-    <content><![CDATA[<h1 id="欢迎来到“龟之飞”"><a href="#欢迎来到“龟之飞”" class="headerlink" title="欢迎来到“龟之飞”"></a>欢迎来到“龟之飞”</h1><p>欢迎大家来到我的博客网站“龟之飞”！这里是一个充满活力和创意的社区，我们致力于分享各种有趣的技术和艺术内容。</p>
-<h2 id="关于我们"><a href="#关于我们" class="headerlink" title="关于我们"></a>关于我们</h2><p>作为一个博客网站，我们提供了一个轻松愉悦的阅读环境，让大家可以尽情地分享和创作自己的想法和经验。在这里，您可以看到来自全球各地的作者们分享的各种有趣、有趣的故事和经验——从科技和编程到设计和生活方式，再到文化和旅行等等。  </p>
-<h2 id="使用说明"><a href="#使用说明" class="headerlink" title="使用说明"></a>使用说明</h2><p>本站使用侧边栏来导航，拥有多样化的功能：可以对文章评论、搜索文章、查看动态等。若您想深入了解，可以前往 <a href="https://cutexiaoguigui.github.io/2023/04/29/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" title="使用说明">龟之飞使用说明</a> 了解更多。</p>
-<h2 id="设计理念"><a href="#设计理念" class="headerlink" title="设计理念"></a>设计理念</h2><p>我们的网站在设计上力求简单和易用，让读者可以更加专注于内容本身。我们采用了响应式布局，使得网站可以自适应不同的屏幕大小，从而在桌面电脑、平板电脑和智能手机上都能够获得最佳的视觉效果和用户体验。</p>
-<p>此外，我们的网站还提供了一些方便的功能，例如评论区和社交分享按钮等。这些功能可以帮助读者更好地互动和分享内容，同时也为作者们提供了反馈和支持。</p>
-<h2 id="加入我们"><a href="#加入我们" class="headerlink" title="加入我们"></a>加入我们</h2><p>如果您是一个具有创意和独立思考能力的作者，我们非常欢迎您来加入我们的社区。在这里，您可以享受到自由创作的乐趣，同时也可以结识各种有趣的朋友和同行。</p>
-<p>如果您是一个对各种各样的技术和艺术感兴趣的读者，我们同样欢迎您的加入和支持。在这里，您可以找到各种有趣的内容，并与作者们互动和交流。</p>
-<p>总之，“龟之飞”是一个充满活力和创意的博客网站，我们期待与您一起探索更多的可能性。如果您有任何建议或意见，请随时与我们联系。感谢您的支持，祝您在“龟之飞”度过愉快的时光！</p>
-]]></content>
-      <categories>
-        <category>龟之飞官方</category>
-      </categories>
-      <tags>
-        <tag>官方</tag>
-        <tag>介绍</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>五一游记</title>
-    <url>/2023/05/03/%E4%BA%94%E4%B8%80%E6%B8%B8%E8%AE%B0/</url>
-    <content><![CDATA[<h1 id="五一游记"><a href="#五一游记" class="headerlink" title="五一游记"></a>五一游记</h1><p>五一放假我决定出去旅行，体验一下不同的生活。这次我选择了去“<a href="http://www.shelarigu.com/" title="好玩哦！">熹乐谷</a>”。  </p>
-<span id="more"></span>
-
-<h2 id="温泉"><a href="#温泉" class="headerlink" title="温泉"></a>温泉</h2><p>第一天下午，我来到了当地最著名的温泉度假酒店。当我踏进温泉池塘时，仿佛置身于一片湖泊之中，水面静谧无声，波光粼粼。池塘周围是一片郁郁葱葱的竹林，摇曳着轻盈的枝叶。温泉里面有一股能缓解疲劳的力量，就如同放在太阳底下的雪球一样，可以轻松地融化掉你身上的疲惫和压力。  </p>
-<p>其中有一座高处的温泉池，像一座城堡般屹立在山腰之上，俯瞰着整个小县城。在上面泡澡时，能够欣赏到美丽的风景同时感受微风拂面，真的好像是一个仙境。  </p>
-<p><img src="https://ts1.cn.mm.bing.net/th/id/R-C.c061e54efa7b6bd66c53c5fd1225330b?rik=lzJ37vSEKe4Bdg&riu=http://www.shelarigu.com/vancheerfile/images/2020/6/20200611043621213.jpg&ehk=WDItudnl43PCL2kYxp0StXSiNbrm9VmHH5DnNNFU070=&risl=&pid=ImgRaw&r=0" alt="温泉" title="好看"></p>
-<h2 id="游泳"><a href="#游泳" class="headerlink" title="游泳"></a>游泳</h2><p>第二天早上，我前往了当地的水上乐园，在那里我体验了各种水上游戏。其中最刺激的是漂流河，它像一条蜿蜒的小溪，在我身边流淌着。当我漂流在其中时，感觉自己就像一只小舟，被涛声拍打着向前驶去。这里没有任何的规则和束缚，脑海中只有眼前的水流和心情的起伏，让人忘记时间的存在。  </p>
-<p>还有一个水上的游戏叫做“跳水”，它就像一场冒险，让人兴奋不已。站在高台上，四周尽是喧闹的欢呼声和嬉笑声，当我跳下去时，感觉整个世界都在颤抖。然后一头扎进水中，朦胧中见到有各种各样的鱼游过来，真的无比惊奇。  </p>
-<p><img src="https://img.jinmalvyou.com/20200909/a74a8caeb28144d4bf50eaf7d68bb5e2.jpg" alt="水上乐园" title="好玩"></p>
-<h2 id="美食"><a href="#美食" class="headerlink" title="美食"></a>美食</h2><p>旅行的最后一天，我品尝了当地的美食。街头巷尾散发出阵阵诱人的香味，仿佛可以闻到美食的气息。  </p>
-<p>我首先尝试了当地特色的烤鱼，它的鱼肉鲜嫩，口感滑爽，香气浓郁。烤鱼店的老板还会特别加入秘制的调味料，让它更加美味可口。  </p>
-<p>另外还有一道名为 “老婆饼”的小吃，它口感酥脆，内馅甜润。就像我小时候的梦想，外表看起来很简单，但里面包容了许多复杂的感情和经历。  </p>
-<p><img src="https://img.zcool.cn/community/0159fa5d809c24a8012060be8f47b1.jpg@1280w_1l_2o_100sh.jpg" alt="老婆饼" title="美味">  </p>
-<h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p>这趟旅行丰富了我的生活体验，就像一次充满活力和刺激的探险，让我感受到了世界的多样性。</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>游记</tag>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于我</title>
-    <url>/2023/04/29/%E5%85%B3%E4%BA%8E%E6%88%91/</url>
-    <content><![CDATA[<h1 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h1><h2 id="介绍我自己"><a href="#介绍我自己" class="headerlink" title="介绍我自己"></a>介绍我自己</h2><blockquote>
-<p>xiaogui lives in china</p>
-</blockquote>
-<p>姓名：龟龟<br>年龄：青春年华<br>现居：广州<br>邮箱：<a href="mailto:&#120;&#x69;&#97;&#111;&#103;&#117;&#x69;&#x74;&#x75;&#114;&#x74;&#x6c;&#x65;&#x40;&#x31;&#54;&#x33;&#x2e;&#x63;&#x6f;&#109;">&#120;&#x69;&#97;&#111;&#103;&#117;&#x69;&#x74;&#x75;&#114;&#x74;&#x6c;&#x65;&#x40;&#x31;&#54;&#x33;&#x2e;&#x63;&#x6f;&#109;</a><br>属相：兔  </p>
-<span id="more"></span>
-
-<blockquote>
-<p>兔属相代表着机智、细心、温柔和谨慎，兔子是十二生肖中最具有亲和力的动物之一，善于倾听和关怀他人。 </p>
-</blockquote>
-<p><img src="/yuxuaner.ico" alt="龟龟" title="可爱的龟"></p>
-<h2 id="介绍龟之飞"><a href="#介绍龟之飞" class="headerlink" title="介绍龟之飞"></a>介绍龟之飞</h2><p><a href="https://cutexiaoguigui.github.io/2023/04/29/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E9%BE%9F%E4%B9%8B%E9%A3%9E%EF%BC%81/" title="龟之飞">龟之飞介绍</a></p>
-]]></content>
-      <categories>
-        <category>龟之飞官方</category>
-      </categories>
-      <tags>
-        <tag>介绍</tag>
       </tags>
   </entry>
 </search>
