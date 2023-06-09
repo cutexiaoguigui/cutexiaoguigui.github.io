@@ -6,7 +6,7 @@
   <link href="https://cutexiaoguigui.eu.org/atom.xml" rel="self"/>
   
   <link href="https://cutexiaoguigui.eu.org/"/>
-  <updated>2023-05-20T03:36:25.007Z</updated>
+  <updated>2023-06-09T08:54:14.481Z</updated>
   <id>https://cutexiaoguigui.eu.org/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>cloudflare pages</title>
+    <link href="https://cutexiaoguigui.eu.org/2023/06/04/cloudflare-pages/"/>
+    <id>https://cutexiaoguigui.eu.org/2023/06/04/cloudflare-pages/</id>
+    <published>2023-06-04T09:17:39.000Z</published>
+    <updated>2023-06-09T08:54:14.481Z</updated>
+    
+    <content type="html"><![CDATA[<p>尝试布置中…</p><p>打卡：</p><blockquote><p>1</p><p>2</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;尝试布置中…&lt;/p&gt;
+&lt;p&gt;打卡：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1&lt;/p&gt;
+&lt;p&gt;2&lt;/p&gt;
+&lt;/blockquote&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>hexo站点seo优化</title>
