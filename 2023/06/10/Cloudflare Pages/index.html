@@ -102,7 +102,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">692</span>
+            <span class="post-count">705</span>
         </span>
     </span>
 
@@ -148,7 +148,7 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">##!/bin/bash</span><br><span class="line"></span><br><span class="line">##配置环境</span><br><span class="line">npm install -g hexo-cli</span><br><span class="line">mkdir hexo</span><br><span class="line">cd hexo</span><br><span class="line">hexo init</span><br><span class="line">npm install</span><br><span class="line">rm -rf source/_posts</span><br><span class="line">mkdir -p source/_posts</span><br><span class="line"></span><br><span class="line">##安装主题(可以修改成自己喜欢的主题)</span><br><span class="line">npm i hexo-theme-ayer -S</span><br><span class="line"></span><br><span class="line">##安装实现网页搜索功能(看你的主题是否支持)(可选)</span><br><span class="line">npm install hexo-generator-searchdb --save</span><br><span class="line"></span><br><span class="line">##安装文章置顶(可选)</span><br><span class="line">npm install hexo-generator-index-pin-top --save</span><br><span class="line"></span><br><span class="line">##复制文章到指定目录</span><br><span class="line">cd ../</span><br><span class="line">cp -r `ls | grep -v hexo | grep -v config.yml | xargs` hexo/source</span><br><span class="line">##复制配置文件</span><br><span class="line">cp config.yml hexo</span><br><span class="line"></span><br><span class="line">##开始构建</span><br><span class="line">cd hexo &amp;&amp; hexo g --config config.yml</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <ol start="3">
-<li>编辑好后，在blog根目录右键，git bash here，输入“hexo g -d”，等待运行完毕后如果没有报错，来到Github查看你的仓库，里面应该已经有“build.sh”这个文件了。</li>
+<li>编辑好后，在blog根目录右键，git bash here，输入“hexo g -d”，等待运行完毕后如果没有报错，来到Github查看你的仓库，里面应该已经有“build.sh”这个文件了✨。</li>
 </ol>
 <ul>
 <li><h2 id="Cloudflare设置"><a href="#Cloudflare设置" class="headerlink" title="Cloudflare设置"></a>Cloudflare设置</h2></li>
@@ -166,7 +166,7 @@
 <li>接着按“保存”。</li>
 </ol>
 <ul>
-<li><h2 id="大功告成！"><a href="#大功告成！" class="headerlink" title="大功告成！"></a>大功告成！</h2></li>
+<li><h2 id="✨大功告成！"><a href="#✨大功告成！" class="headerlink" title="✨大功告成！"></a>✨大功告成！</h2></li>
 </ul>
 <ol>
 <li>截止这里，一切就已经搞定了，只要访问它给你的网址就可以啦！</li>
@@ -176,6 +176,8 @@
 <ol start="2">
 <li>以后，只要你有新的更新，只需直接“hexo g -d”。这样，Github和Cloudflare的Pages都会一起更改，<del>保证实时同步！</del>，保证两个都会是最新blog！</li>
 </ol>
+<p><strong>龟之飞Cloudflare版：cutexiaoguigui.pages.dev。</strong></p>
+<p>✨祝大家成功！</p>
  
       <!-- reward -->
       
