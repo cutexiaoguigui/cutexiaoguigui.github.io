@@ -53,11 +53,11 @@
 <ol>
 <li>登录你的Cloudflare账号，点击“Workers 和 Pages”，点击“构建应用程序”，选择“连接至git”，然后在那里登录Github，选择你的blog仓库(如图)，点击“开始设置”。</li>
 </ol>
-<p><img src="https://cutexiaoguigui.eu.org/images/%E6%BC%94%E7%A4%BA-2" alt="实例"></p>
+<p><img src="https://cutexiaoguigui.eu.org/images/%E6%BC%94%E7%A4%BA-2.png" alt="实例"></p>
 <ol start="2">
 <li>然后，严格按照我的示例输入！</li>
 </ol>
-<img src="演示-3.png" alt="实例" style="zoom:50%;" />
+<img src="https://cutexiaoguigui.eu.org/images/%E6%BC%94%E7%A4%BA-3.png" alt="实例" style="zoom:50%;" />
 
 <ol start="3">
 <li>接着按“保存”。</li>
@@ -69,7 +69,7 @@
 <li>截止这里，一切就已经搞定了，只要访问它给你的网址就可以啦！</li>
 </ol>
 <p>成功的栗子：</p>
-<p><img src="/%E6%BC%94%E7%A4%BA-4.png" alt="成功的栗子"></p>
+<p><img src="https://cutexiaoguigui.eu.org/images/%E6%BC%94%E7%A4%BA-4.png" alt="成功的栗子"></p>
 <ol start="2">
 <li>以后，只要你有新的更新，只需直接“hexo g -d”。这样，Github和Cloudflare的Pages都会一起更改，<del>保证实时同步！</del>，保证两个都会是最新blog！</li>
 </ol>
