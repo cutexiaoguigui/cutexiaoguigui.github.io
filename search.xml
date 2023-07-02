@@ -25,6 +25,8 @@
     <url>/2023/07/01/%E8%AE%BA%E6%95%B0%E7%8B%AC%EF%BC%9F/</url>
     <content><![CDATA[<h1 id="幻方"><a href="#幻方" class="headerlink" title="幻方"></a>幻方</h1><h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>大家听过幻方吗？  </p>
 <p>​		没错，就是一个正方形，其中每条边、每条行、每条对角线上的数相加起来后，结果都一样。那么，你想知道如何制造一个幻方吗？来这里学习学习吧！  </p>
+<span id="more"></span>
+
 <p>首先，让你看看幻方究竟是什么：  </p>
 <table>
 <thead>
@@ -113,8 +115,6 @@
 </ol>
 <p>例如：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">    2  （写在1的右上方）</span><br><span class="line"></span><br><span class="line">x 1 x  （1多1是2）</span><br><span class="line"></span><br><span class="line">x x x  </span><br><span class="line"></span><br><span class="line">x x x</span><br></pre></td></tr></table></figure>
-
-
 
 
 
