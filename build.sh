@@ -18,6 +18,9 @@ npm install hexo-generator-searchdb --save
 ##安装文章置顶(可选)
 npm install hexo-generator-index-pin-top --save
 
+##安装katex渲染器(可选)
+npm un hexo-renderer-marked -S && npm i hexo-renderer-markdown-it-katex -S
+
 ##复制文章到指定目录
 cd ../
 cp -r `ls | grep -v hexo | grep -v config.yml | xargs` hexo/source

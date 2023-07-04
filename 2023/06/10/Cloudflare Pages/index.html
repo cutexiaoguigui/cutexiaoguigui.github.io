@@ -102,7 +102,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">725</span>
+            <span class="post-count">748</span>
         </span>
     </span>
 
@@ -126,32 +126,39 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <h1 id="网站部署至Cloudflare-Pages"><a href="#网站部署至Cloudflare-Pages" class="headerlink" title="网站部署至Cloudflare Pages"></a>网站部署至Cloudflare Pages</h1><p>龟之飞目前可访问的网站是基于Github Pages服务实现的，听说Cloudflare Pages也很不错，自定义方面更强，便尝试了一下，目前成功了，但在过程中也遇到了许多困难，便决定写篇文章带领大家操作一下。</p>
+  <h1>网站部署至Cloudflare Pages</h1>
+<p>龟之飞目前可访问的网站是基于Github Pages服务实现的，听说Cloudflare Pages也很不错，自定义方面更强，便尝试了一下，目前成功了，但在过程中也遇到了许多困难，便决定写篇文章带领大家操作一下。</p>
 <span id="more"></span>
-
-<h1 id="前情提要"><a href="#前情提要" class="headerlink" title="前情提要"></a>前情提要</h1><ol>
-<li><p>你需要先将你的hexo网站部署至Github Pages服务中，若成功，你应该可以通过“ https:&#x2F;&#x2F;用户名.github.io ”来访问你的网站。  </p>
+<h1>前情提要</h1>
+<ol>
+<li>
+<p>你需要先将你的hexo网站部署至Github Pages服务中，若成功，你应该可以通过“ <a target="_blank" rel="noopener" href="https://xn--eqr924avxo.github.io">https://用户名.github.io</a> ”来访问你的网站。</p>
 </li>
-<li><p>拥有一个cloudflare账号。</p>
+<li>
+<p>拥有一个cloudflare账号。</p>
 </li>
 </ol>
-<h1 id="正式操作"><a href="#正式操作" class="headerlink" title="正式操作"></a>正式操作</h1><ul>
-<li><h2 id="文件配置"><a href="#文件配置" class="headerlink" title="文件配置"></a>文件配置</h2></li>
+<h1>正式操作</h1>
+<ul>
+<li>
+<h2 id="文件配置">文件配置</h2>
+</li>
 </ul>
 <blockquote>
 <p>Cloudflare并非Github，所以你在本地上传了hexo网站到Github后Cloudflare即使拉取了也会缺失部分渲染器之类的，我们需要自己重新安装。但Cloudflare只支持单行命令，所以我们只能现将构建命令提前编写好，再在Cloudflare中运行它。</p>
 </blockquote>
 <ol>
 <li>进入blog\source文件夹，这里应该有一个名为“_posts”的文件夹或其他文件夹。你需要先在文件资源管理器-&gt;查看-&gt;显示-&gt;勾选“显示文件后缀名”。</li>
-<li>完成后，我们新建一个文件叫“build.sh”，打开，输入构建信息，这里给出我的配置，如果你和我一样用的是<a target="_blank" rel="noopener" href="https://shen-yu.gitee.io/2019/ayer/">Ayer</a>主题的话，那你可以复制我的配置，否则请自行修改，不然到时候站点缺少了部分依赖就无法运行了。</li>
+<li>完成后，我们新建一个文件叫“<a target="_blank" rel="noopener" href="http://build.sh">build.sh</a>”，打开，输入构建信息，这里给出我的配置，如果你和我一样用的是<a target="_blank" rel="noopener" href="https://shen-yu.gitee.io/2019/ayer/">Ayer</a>主题的话，那你可以复制我的配置，否则请自行修改，不然到时候站点缺少了部分依赖就无法运行了。</li>
 </ol>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="comment">##配置环境</span></span><br><span class="line">npm install -g hexo-cli</span><br><span class="line"><span class="built_in">mkdir</span> hexo</span><br><span class="line"><span class="built_in">cd</span> hexo</span><br><span class="line">hexo init</span><br><span class="line">npm install</span><br><span class="line"><span class="built_in">rm</span> -rf <span class="built_in">source</span>/_posts</span><br><span class="line"><span class="built_in">mkdir</span> -p <span class="built_in">source</span>/_posts</span><br><span class="line"></span><br><span class="line"><span class="comment">##安装主题(可以修改成自己喜欢的主题)</span></span><br><span class="line">npm i hexo-theme-ayer -S</span><br><span class="line"></span><br><span class="line"><span class="comment">##安装实现网页搜索功能(看你的主题是否支持)(可选)</span></span><br><span class="line">npm install hexo-generator-searchdb --save</span><br><span class="line"></span><br><span class="line"><span class="comment">##安装文章置顶(可选)</span></span><br><span class="line">npm install hexo-generator-index-pin-top --save</span><br><span class="line"></span><br><span class="line"><span class="comment">##复制文章到指定目录</span></span><br><span class="line"><span class="built_in">cd</span> ../</span><br><span class="line"><span class="built_in">cp</span> -r `<span class="built_in">ls</span> | grep -v hexo | grep -v config.yml | xargs` hexo/source</span><br><span class="line"><span class="comment">##复制配置文件</span></span><br><span class="line"><span class="built_in">cp</span> config.yml hexo</span><br><span class="line"></span><br><span class="line"><span class="comment">##开始构建</span></span><br><span class="line"><span class="built_in">cd</span> hexo &amp;&amp; hexo g --config config.yml</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="comment">##配置环境</span></span><br><span class="line">npm install -g hexo-cli</span><br><span class="line"><span class="built_in">mkdir</span> hexo</span><br><span class="line"><span class="built_in">cd</span> hexo</span><br><span class="line">hexo init</span><br><span class="line">npm install</span><br><span class="line"><span class="built_in">rm</span> -rf <span class="built_in">source</span>/_posts</span><br><span class="line"><span class="built_in">mkdir</span> -p <span class="built_in">source</span>/_posts</span><br><span class="line"></span><br><span class="line"><span class="comment">##安装主题(可以修改成自己喜欢的主题)</span></span><br><span class="line">npm i hexo-theme-ayer -S</span><br><span class="line"></span><br><span class="line"><span class="comment">##安装实现网页搜索功能(看你的主题是否支持)(可选)</span></span><br><span class="line">npm install hexo-generator-searchdb --save</span><br><span class="line"></span><br><span class="line"><span class="comment">##安装文章置顶(可选)</span></span><br><span class="line">npm install hexo-generator-index-pin-top --save</span><br><span class="line"></span><br><span class="line"><span class="comment">##安装katex渲染器(可选)</span></span><br><span class="line">npm un hexo-renderer-marked -S &amp;&amp; npm i hexo-renderer-markdown-it-katex -S</span><br><span class="line"></span><br><span class="line"><span class="comment">##复制文章到指定目录</span></span><br><span class="line"><span class="built_in">cd</span> ../</span><br><span class="line"><span class="built_in">cp</span> -r `<span class="built_in">ls</span> | grep -v hexo | grep -v config.yml | xargs` hexo/source</span><br><span class="line"><span class="comment">##复制配置文件</span></span><br><span class="line"><span class="built_in">cp</span> config.yml hexo</span><br><span class="line"></span><br><span class="line"><span class="comment">##开始构建</span></span><br><span class="line"><span class="built_in">cd</span> hexo &amp;&amp; hexo g --config config.yml</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <ol start="3">
-<li>编辑好后，在blog根目录右键，git bash here，输入“hexo g -d”，等待运行完毕后如果没有报错，来到Github查看你的仓库，里面应该已经有“build.sh”这个文件了✨。</li>
+<li>编辑好后，在blog根目录右键，git bash here，输入“hexo g -d”，等待运行完毕后如果没有报错，来到Github查看你的仓库，里面应该已经有“<a target="_blank" rel="noopener" href="http://build.sh">build.sh</a>”这个文件了✨。</li>
 </ol>
 <ul>
-<li><h2 id="Cloudflare设置"><a href="#Cloudflare设置" class="headerlink" title="Cloudflare设置"></a>Cloudflare设置</h2></li>
+<li>
+<h2 id="cloudflare设置">Cloudflare设置</h2>
+</li>
 </ul>
 <ol>
 <li>登录你的Cloudflare账号，点击“Workers 和 Pages”，点击“构建应用程序”，选择“连接至git”，然后在那里登录Github，选择你的blog仓库(如图)，点击“开始设置”。</li>
@@ -161,12 +168,13 @@
 <li>然后，严格按照我的示例输入！</li>
 </ol>
 <img src="https://cutexiaoguigui.eu.org/images/%E6%BC%94%E7%A4%BA-3.png" alt="实例" style="zoom:50%;" />
-
 <ol start="3">
 <li>接着按“保存”。</li>
 </ol>
 <ul>
-<li><h2 id="✨大功告成！"><a href="#✨大功告成！" class="headerlink" title="✨大功告成！"></a>✨大功告成！</h2></li>
+<li>
+<h2 id="✨大功告成">✨大功告成！</h2>
+</li>
 </ul>
 <ol>
 <li>截止这里，一切就已经搞定了，只要访问它给你的网址就可以啦！</li>
@@ -174,7 +182,7 @@
 <p>成功的栗子：</p>
 <p><img src="https://cutexiaoguigui.eu.org/images/%E6%BC%94%E7%A4%BA-4.png" alt="成功的栗子"></p>
 <ol start="2">
-<li>以后，只要你有新的更新，只需直接“hexo g -d”。这样，Github和Cloudflare的Pages都会一起更改，<del>保证实时同步！</del>，保证两个都会是最新blog！</li>
+<li>以后，只要你有新的更新，只需直接“hexo g -d”。这样，Github和Cloudflare的Pages都会一起更改，<s>保证实时同步！</s>，保证两个都会是最新blog！</li>
 </ol>
 <p><strong>龟之飞Cloudflare版：<a target="_blank" rel="noopener" href="https://backup.cutexiaoguigui.eu.org/%E3%80%82">https://backup.cutexiaoguigui.eu.org/。</a></strong></p>
 <p>✨祝大家成功！欢迎大家在评论区晒出自己的Cloudflare Pages网站哦！</p>
