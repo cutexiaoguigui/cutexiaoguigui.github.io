@@ -65,7 +65,7 @@
 <li>官网端(下载速度较慢)：<a href="https://github.com/cloudflare/cloudflared/releases">https://github.com/cloudflare/cloudflared/releases</a></li>
 </ol>
 <blockquote>
-<p>下载完成后，我们把它移到一个你喜欢的位置。</p>
+<p>下载完成后，我们把它移到一个你喜欢的位置</p>
 </blockquote>
 <p>如果你是在网盘下载的，那么应该会包含1个叫“cloudflared.exe”的文件，若你是从github下载的，则需将下载的文件重命名为“cloudflared.exe”。</p>
 <h4 id="认证cloudflare">认证cloudflare</h4>
@@ -77,14 +77,14 @@
 <p>继续输入以下代码：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">.\cloudflared.exe tunnel create &lt;NAME&gt;</span><br></pre></td></tr></table></figure>
 <p>其中，<code>&lt;NAME&gt;</code>写你要创建的隧道名称，这个可以随便取。如：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.\cloudflared.exe tunnel create web</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.\cloudflared.exe tunnel create main</span><br></pre></td></tr></table></figure>
 <p>在输出信息中，应该有一条tunnel ID，请复制记下来。</p>
 <h4 id="配置dns记录">配置DNS记录</h4>
 <p>继续输入：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">.\cloudflared.exe tunnel route dns &lt;tunnel-name&gt; &lt;domain&gt;</span><br></pre></td></tr></table></figure>
 <p>其中，<code>&lt;tunnel-name&gt;</code>写你的隧道名称，<code>&lt;domain&gt;</code>写你的需要内网穿透到的域名，一般是：<code>隧道名称.你的域名</code>，</p>
 <p>如：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.\cloudflaredexe tunnel route dns web web.example.com</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.\cloudflaredexe tunnel route dns main main.example.com</span><br></pre></td></tr></table></figure>
 <h4 id="修改配置文件">修改配置文件</h4>
 <h5 id="修改">修改</h5>
 <p>在一开始存放<code>cloudflared.exe</code>的地方，此时应该多出了一个名为<code>config.yml</code>的文件，若没有，可以手动创建。</p>
@@ -93,13 +93,13 @@
 <h5 id="验证">验证</h5>
 <p>在终端输入以下代码：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">.\cloudflared.exe tunnel ingress validate</span><br></pre></td></tr></table></figure>
-<p>若正确，应当会输出：<code>OK</code>，否则请<a href="https://cutexiaoguigui.eu.org/2023/07/05/Cloudflare-Tunnel/#%E4%BF%AE%E6%94%B9" title="修改">返回</a>。</p>
+<p>若正确，应当会输出：<code>OK</code>，否则请<a href="https://cutexiaoguigui.eu.org/2023/07/05/Cloudflare-Tunnel/#%E4%BF%AE%E6%94%B9" title="修改">返回修改</a>。</p>
 <h4 id="运行隧道">运行隧道</h4>
 <p>在终端输入：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">.\cloudflared.exe tunnel run xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx(你的tunnel ID)</span><br></pre></td></tr></table></figure>
 <p>若成功，那么，访问你的域名，应该就可以进行访问了！</p>
 <h2 id="结尾">结尾</h2>
-<p>到这里，一切就完成了，欢迎大家在评论区晒出自己的域名！</p>
+<p>到这里，一切就完成了，欢迎大家在评论区晒出自己的域名哦！</p>
 ]]></content>
       <categories>
         <category>技术</category>
