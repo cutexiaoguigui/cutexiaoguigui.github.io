@@ -322,11 +322,11 @@
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">tunnel:</span> <span class="string">xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx(你的tunnel</span> <span class="string">ID)</span></span><br><span class="line"><span class="attr">credentials-file:</span> <span class="string">C:\Users\此处写你的Windows账号名称\.cloudflared\xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx(你的tunnel</span> <span class="string">ID).json</span></span><br><span class="line"><span class="attr">ingress:</span></span><br><span class="line">  <span class="comment"># 需要映射到的域名</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">hostname:</span> <span class="string">xxx.example.com</span></span><br><span class="line">  <span class="comment"># 本地地址,xxxx写需要穿透的端口</span></span><br><span class="line">    <span class="attr">service:</span> <span class="string">http://localhost:xxxx</span></span><br><span class="line">    </span><br><span class="line">  <span class="bullet">-</span> <span class="attr">service:</span> <span class="string">http_status:404</span></span><br></pre></td></tr></table></figure>
 <h5 id="验证">验证</h5>
 <p>在终端输入以下代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.\cloudflared.exe tunnel ingress validate</span><br></pre></td></tr></table></figure>
-<p>若正确，应当会输出：<code>OK</code>，否则请[返回](<a href="https://cutexiaoguigui.eu.org/2023/7/5/Cloudflare">https://cutexiaoguigui.eu.org/2023/7/5/Cloudflare</a> Tunnel/#修改)。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.\cloudflared.exe tunnel ingress validate</span><br></pre></td></tr></table></figure>
+<p>若正确，应当会输出：<code>OK</code>，否则请<a href="https://cutexiaoguigui.eu.org/2023/7/5/Cloudflare%20Tunnel/#%E4%BF%AE%E6%94%B9" title="修改">返回</a>。</p>
 <h4 id="运行隧道">运行隧道</h4>
 <p>在终端输入：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.\cloudflared.exe tunnel run xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx(你的tunnel ID)</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.\cloudflared.exe tunnel run xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx(你的tunnel ID)</span><br></pre></td></tr></table></figure>
 <p>若成功，那么，访问你的域名，应该就可以进行访问了！</p>
 <h2 id="结尾">结尾</h2>
 <p>到这里，一切就完成了，欢迎大家在评论区删除自己的域名！</p>
@@ -719,7 +719,7 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
     
     <footer class="article-footer">
        
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AF%B4%E6%98%8E/" rel="tag">说明</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cloudflare/" rel="tag">cloudflare</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AF%B4%E6%98%8E/" rel="tag">说明</a></li></ul>
 
     </footer>
   </div>
@@ -821,7 +821,8 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
       
     <div class="article-entry" itemprop="articleBody">
        
-  <h1 id="Hexo建站"><a href="#Hexo建站" class="headerlink" title="Hexo建站"></a>Hexo建站</h1><p>这期我将为大家介绍一种建站方式，hexo建站，我们的龟之飞就是用hexo所搭建的静态网站，具体如下。</p> 
+  <h1>Hexo建站</h1>
+<p>这期我将为大家介绍一种建站方式，hexo建站，我们的龟之飞就是用hexo所搭建的静态网站，具体如下。</p> 
       <a class="article-more-link" href="/2023/05/14/hexo%E5%BB%BA%E7%AB%99/"
         >阅读全部</a
       >
