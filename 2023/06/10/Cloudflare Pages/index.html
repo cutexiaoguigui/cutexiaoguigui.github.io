@@ -102,7 +102,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">748</span>
+            <span class="post-count">724</span>
         </span>
     </span>
 
@@ -127,7 +127,7 @@
     <div class="article-entry" itemprop="articleBody">
        
   <h1>网站部署至Cloudflare Pages</h1>
-<p>龟之飞目前可访问的网站是基于Github Pages服务实现的，听说Cloudflare Pages也很不错，自定义方面更强，便尝试了一下，目前成功了，但在过程中也遇到了许多困难，便决定写篇文章带领大家操作一下。</p>
+<p>龟之飞目前可访问的网站是基于Github Pages服务实现的，听说Cloudflare Pages也很不错，自定义方面更强，便决定写篇文章带领大家操作一下。</p>
 <span id="more"></span>
 <h1>前情提要</h1>
 <ol>
@@ -149,7 +149,7 @@
 </blockquote>
 <ol>
 <li>进入blog\source文件夹，这里应该有一个名为“_posts”的文件夹或其他文件夹。你需要先在文件资源管理器-&gt;查看-&gt;显示-&gt;勾选“显示文件后缀名”。</li>
-<li>完成后，我们新建一个文件叫“<a target="_blank" rel="noopener" href="http://build.sh">build.sh</a>”，打开，输入构建信息，这里给出我的配置，如果你和我一样用的是<a target="_blank" rel="noopener" href="https://shen-yu.gitee.io/2019/ayer/">Ayer</a>主题的话，那你可以复制我的配置，否则请自行修改，不然到时候站点缺少了部分依赖就无法运行了。</li>
+<li>完成后，我们新建一个文件叫“<code>build.sh</code>”，打开，输入构建信息，这里给出我的配置，如果你和我一样用的是<a target="_blank" rel="noopener" href="https://shen-yu.gitee.io/2019/ayer/">Ayer</a>主题的话，那你可以复制我的配置，否则请自行修改，不然到时候站点缺少了部分依赖就无法运行了。</li>
 </ol>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="comment">##配置环境</span></span><br><span class="line">npm install -g hexo-cli</span><br><span class="line"><span class="built_in">mkdir</span> hexo</span><br><span class="line"><span class="built_in">cd</span> hexo</span><br><span class="line">hexo init</span><br><span class="line">npm install</span><br><span class="line"><span class="built_in">rm</span> -rf <span class="built_in">source</span>/_posts</span><br><span class="line"><span class="built_in">mkdir</span> -p <span class="built_in">source</span>/_posts</span><br><span class="line"></span><br><span class="line"><span class="comment">##安装主题(可以修改成自己喜欢的主题)</span></span><br><span class="line">npm i hexo-theme-ayer -S</span><br><span class="line"></span><br><span class="line"><span class="comment">##安装实现网页搜索功能(看你的主题是否支持)(可选)</span></span><br><span class="line">npm install hexo-generator-searchdb --save</span><br><span class="line"></span><br><span class="line"><span class="comment">##安装文章置顶(可选)</span></span><br><span class="line">npm install hexo-generator-index-pin-top --save</span><br><span class="line"></span><br><span class="line"><span class="comment">##安装katex渲染器(可选)</span></span><br><span class="line">npm un hexo-renderer-marked -S &amp;&amp; npm i hexo-renderer-markdown-it-katex -S</span><br><span class="line"></span><br><span class="line"><span class="comment">##复制文章到指定目录</span></span><br><span class="line"><span class="built_in">cd</span> ../</span><br><span class="line"><span class="built_in">cp</span> -r `<span class="built_in">ls</span> | grep -v hexo | grep -v config.yml | xargs` hexo/source</span><br><span class="line"><span class="comment">##复制配置文件</span></span><br><span class="line"><span class="built_in">cp</span> config.yml hexo</span><br><span class="line"></span><br><span class="line"><span class="comment">##开始构建</span></span><br><span class="line"><span class="built_in">cd</span> hexo &amp;&amp; hexo g --config config.yml</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <ol start="3">
@@ -184,7 +184,7 @@
 <ol start="2">
 <li>以后，只要你有新的更新，只需直接“hexo g -d”。这样，Github和Cloudflare的Pages都会一起更改，<s>保证实时同步！</s>，保证两个都会是最新blog！</li>
 </ol>
-<p><strong>龟之飞Cloudflare版：<a target="_blank" rel="noopener" href="https://backup.cutexiaoguigui.eu.org/%E3%80%82">https://backup.cutexiaoguigui.eu.org/。</a></strong></p>
+<p><strong>龟之飞Cloudflare版：<a target="_blank" rel="noopener" href="https://backup.cutexiaoguigui.eu.org/">https://backup.cutexiaoguigui.eu.org/</a> 。</strong></p>
 <p>✨祝大家成功！欢迎大家在评论区晒出自己的Cloudflare Pages网站哦！</p>
  
       <!-- reward -->
@@ -263,7 +263,7 @@
    
   <nav class="article-nav">
     
-      <a href="/2023/07/01/%E8%AE%BA%E6%95%B0%E7%8B%AC%EF%BC%9F/" class="article-nav-link">
+      <a href="/2023/07/01/%E8%AE%BA%E5%B9%BB%E6%96%B9%EF%BC%9F/" class="article-nav-link">
         <strong class="article-nav-caption">上一篇</strong>
         <div class="article-nav-title">
           

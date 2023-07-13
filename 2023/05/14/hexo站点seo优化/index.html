@@ -102,7 +102,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">355</span>
+            <span class="post-count">356</span>
         </span>
     </span>
 
@@ -126,62 +126,77 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <h1 id="hexo的SEO优化"><a href="#hexo的SEO优化" class="headerlink" title="hexo的SEO优化"></a>hexo的SEO优化</h1><p>之前介绍了hexo建站，这期我将为大家介绍网站的SEO优化，具体如下。</p>
+  <h1>hexo的SEO优化</h1>
+<p>之前介绍了hexo建站，这期我将为大家介绍网站的SEO优化，具体如下。</p>
 <span id="more"></span>
-
 <ul>
-<li><h2 id="配置站点标题和描述"><a href="#配置站点标题和描述" class="headerlink" title="配置站点标题和描述"></a>配置站点标题和描述</h2></li>
+<li>
+<h2 id="配置站点标题和描述">配置站点标题和描述</h2>
+</li>
 </ul>
 <p>在站点的<code>_config.yml</code>文件中设置<code>title</code>和<code>description</code>，如下所示：</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">My</span> <span class="string">Hexo</span> <span class="string">Site</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">This</span> <span class="string">is</span> <span class="string">my</span> <span class="string">Hexo</span> <span class="string">site.</span></span><br></pre></td></tr></table></figure>
-
 <ul>
-<li><h2 id="配置关键词"><a href="#配置关键词" class="headerlink" title="配置关键词"></a>配置关键词</h2></li>
+<li>
+<h2 id="配置关键词">配置关键词</h2>
+</li>
 </ul>
 <p>在站点的<code>_config.yml</code>文件中设置<code>keywords</code>，如下所示：</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">hexo,</span> <span class="string">blog,</span> <span class="string">seo</span></span><br></pre></td></tr></table></figure>
-
 <ul>
-<li><h2 id="使用合适的主题"><a href="#使用合适的主题" class="headerlink" title="使用合适的主题"></a>使用合适的主题</h2></li>
+<li>
+<h2 id="使用合适的主题">使用合适的主题</h2>
+</li>
 </ul>
 <p>选择支持SEO的主题，并根据需要自定义主题样式以提高可读性和搜索引擎友好度。</p>
 <ul>
-<li><h2 id="生成sitemap-xml文件"><a href="#生成sitemap-xml文件" class="headerlink" title="生成sitemap.xml文件"></a>生成sitemap.xml文件</h2></li>
+<li>
+<h2 id="生成sitemap-xml文件">生成sitemap.xml文件</h2>
+</li>
 </ul>
 <p>安装<code>hexo-generator-sitemap</code>插件，使用以下命令进行安装：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
-
 <p>在站点的<code>_config.yml</code>文件中配置插件：</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="attr">sitemap:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">sitemap.xml</span></span><br></pre></td></tr></table></figure>
-
 <ul>
-<li><h2 id="生成robots-txt文件"><a href="#生成robots-txt文件" class="headerlink" title="生成robots.txt文件"></a>生成robots.txt文件</h2></li>
+<li>
+<h2 id="生成robots-txt文件">生成robots.txt文件</h2>
+</li>
 </ul>
 <p>安装<code>hexo-generator-robotstxt</code>插件，使用以下命令进行安装：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-robotstxt --save</span><br></pre></td></tr></table></figure>
-
 <p>在站点的<code>_config.yml</code>文件中配置插件：</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="attr">robots_txt:</span></span><br><span class="line">  <span class="attr">disallow:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">/admin/</span></span><br></pre></td></tr></table></figure>
-
 <ul>
-<li><h2 id="优化文章内容"><a href="#优化文章内容" class="headerlink" title="优化文章内容"></a>优化文章内容</h2><ol>
-<li><p>标题要简明扼要，包含关键词</p>
+<li>
+<h2 id="优化文章内容">优化文章内容</h2>
+<ol>
+<li>
+<p>标题要简明扼要，包含关键词</p>
 </li>
-<li><p>内容结构清晰，使用标题、段落等标签</p>
+<li>
+<p>内容结构清晰，使用标题、段落等标签</p>
 </li>
-<li><p>描述准确，鼓励用户点击进入</p>
+<li>
+<p>描述准确，鼓励用户点击进入</p>
 </li>
-<li><p>图片使用alt属性描述</p>
+<li>
+<p>图片使用alt属性描述</p>
 </li>
-<li><p>避免大量重复内容</p>
+<li>
+<p>避免大量重复内容</p>
 </li>
 </ol>
 </li>
-<li><h2 id="使用CDN加速"><a href="#使用CDN加速" class="headerlink" title="使用CDN加速"></a>使用CDN加速</h2></li>
+<li>
+<h2 id="使用cdn加速">使用CDN加速</h2>
+</li>
 </ul>
 <p>使用CDN可以加快网站访问速度，提高用户体验。</p>
 <ul>
-<li><h2 id="使用HTTPS协议"><a href="#使用HTTPS协议" class="headerlink" title="使用HTTPS协议"></a>使用HTTPS协议</h2></li>
+<li>
+<h2 id="使用https协议">使用HTTPS协议</h2>
+</li>
 </ul>
 <p>使用HTTPS可以提高网站安全性，并且有利于SEO排名。在站点的<code>_config.yml</code>文件中配置如下所示：</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">https://example.com/</span></span><br></pre></td></tr></table></figure>
