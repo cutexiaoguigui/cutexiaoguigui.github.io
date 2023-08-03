@@ -1,31 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>龟之飞</title>
-    <url>/2023/04/29/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E9%BE%9F%E4%B9%8B%E9%A3%9E%EF%BC%81/</url>
-    <content><![CDATA[<h1>欢迎来到“龟之飞”</h1>
-<p>欢迎大家来到我的博客网站“<strong>龟之飞</strong>”！这里是一个充满活力和创意的社区，我们致力于分享各种有趣的技术和艺术内容。</p>
-<h2 id="关于我们">关于我们</h2>
-<p>作为一个博客网站，我们提供了一个轻松愉悦的阅读环境，让大家可以尽情地分享和创作自己的想法和经验。在这里，您可以看到来自全球各地的作者们分享的各种有趣、有趣的故事和经验——从科技和编程到设计和生活方式，再到文化和旅行等等。</p>
-<h2 id="使用说明">使用说明</h2>
-<p>本站使用侧边栏来导航，拥有多样化的功能：可以对文章评论、搜索文章、查看动态等。若您想深入了解，可以前往 <a href="https://cutexiaoguigui.eu.org/2023/04/29/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" title="使用说明"><strong>龟之飞</strong>使用说明</a> 了解更多。</p>
-<h2 id="设计理念">设计理念</h2>
-<p>我们的网站在设计上力求简单和易用，让读者可以更加专注于内容本身。我们采用了响应式布局，使得网站可以自适应不同的屏幕大小，从而在桌面电脑、平板电脑和智能手机上都能够获得最佳的视觉效果和用户体验。</p>
-<p>此外，我们的网站还提供了一些方便的功能，例如评论区和社交分享按钮等。这些功能可以帮助读者更好地互动和分享内容，同时也为作者们提供了反馈和支持。</p>
-<h2 id="加入我们">加入我们</h2>
-<p>如果您是一个具有创意和独立思考能力的作者，我们非常欢迎您来加入我们的社区。在这里，您可以享受到自由创作的乐趣，同时也可以结识各种有趣的朋友和同行。</p>
-<p>如果您是一个对各种各样的技术和艺术感兴趣的读者，我们同样欢迎您的加入和支持。在这里，您可以找到各种有趣的内容，并与作者们互动和交流。</p>
-<p>总之，“<strong>龟之飞</strong>”是一个充满活力和创意的博客网站，我们期待与您一起探索更多的可能性。如果您有任何建议或意见，请随时与我们联系。感谢您的支持，祝您在“<strong>龟之飞</strong>”度过愉快的时光！</p>
-]]></content>
-      <categories>
-        <category>龟之飞官方</category>
-      </categories>
-      <tags>
-        <tag>介绍</tag>
-        <tag>官方</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Cloudflare Tunnel</title>
     <url>/2023/07/05/Cloudflare-Tunnel/</url>
     <content><![CDATA[<h1>Cloudflare Tunnel</h1>
@@ -107,355 +82,6 @@
       <tags>
         <tag>说明</tag>
         <tag>cloudflare</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>挑战1</title>
-    <url>/2023/07/03/%E6%8C%91%E6%88%981/</url>
-    <content><![CDATA[<h1>挑战来临！</h1>
-<p>为了活跃气氛，我决定，向大家发起一个挑战！让我们一起看看谁的答案是最正确也最快的吧！</p>
-<span id="more"></span>
-<blockquote>
-<p>本次题目类似24点，大家准备迎接挑战吧！</p>
-</blockquote>
-<h2 id="规则">规则</h2>
-<blockquote>
-<p>若题目相对于你说过难，只满足第1、2条规则即可，若想加强难度，则同时满足第1、2、3条。</p>
-</blockquote>
-<ol>
-<li>
-<p>填入数学符号，满足答案等于6。</p>
-</li>
-<li>
-<p>可使用任意数学符号，包括但不限于：</p>
-<ul>
-<li>
-<p>“+”</p>
-</li>
-<li>
-<p>“-”</p>
-</li>
-<li>
-<p>“×”</p>
-</li>
-<li>
-<p>“÷”</p>
-</li>
-<li>
-<p>“√￣”</p>
-</li>
-<li>
-<p>“!”</p>
-</li>
-</ul>
-</li>
-<li>
-<p>不得引入新的数字，如：</p>
-<ul>
-<li>X²，引入了“2”，即平方，不可以。</li>
-<li>³√￣，引入了“3”，不可以。</li>
-</ul>
-</li>
-</ol>
-<h2 id="题目">题目</h2>
-<ol>
-<li>
-<p>0	0	0=6</p>
-</li>
-<li>
-<p>1	1	1=6</p>
-</li>
-<li>
-<p>2	2	2=6</p>
-</li>
-<li>
-<p>3	3	3=6</p>
-</li>
-<li>
-<p>4	4	4=6</p>
-</li>
-<li>
-<p>5	5	5=6</p>
-</li>
-<li>
-<p>6	6	6=6</p>
-</li>
-<li>
-<p>7	7	7=6</p>
-</li>
-<li>
-<p>8	8	8=6</p>
-</li>
-<li>
-<p>9	9	9=6</p>
-</li>
-<li>
-<p>10	10	10=6</p>
-</li>
-</ol>
-<h2 id="思考时间">思考时间</h2>
-<blockquote>
-<p>10分钟！</p>
-</blockquote>
-<p>🤔 思考、思索</p>
-<p>💭 冥想、思考</p>
-<p>🧠 头脑、思维</p>
-<p>💡 灵感、启发</p>
-<p>🤯 头脑爆炸、思维混乱</p>
-<p>😶 陷入沉思、默默思考</p>
-<p>📝 记下想法、记录思考的结果</p>
-<p>…</p>
-<h2 id="揭晓答案">揭晓答案</h2>
-<ol>
-<li>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">!</mo><mo>+</mo><mn>0</mn><mo stretchy="false">!</mo><mo>+</mo><mn>0</mn><mo stretchy="false">!</mo><mo stretchy="false">)</mo><mo stretchy="false">!</mo><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">(0!+0!+0!)!=6
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">0</span><span class="mclose">!</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord">0</span><span class="mclose">!</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">0</span><span class="mclose">!</span><span class="mclose">)</span><span class="mclose">!</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span></span></span></span></span></p>
-</li>
-<li>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mn>1</mn><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">!</mo><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">(1+1+1)!=6
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mclose">!</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span></span></span></span></span></p>
-</li>
-<li>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">2+2+2=6
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span></span></span></span></span></p>
-</li>
-<li>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>×</mo><mn>3</mn><mo>−</mo><mn>3</mn><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">3×3-3=6
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span></span></span></span></span></p>
-</li>
-<li>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>+</mo><mn>4</mn><mo>−</mo><msqrt><mn>4</mn></msqrt><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">4+4-\sqrt{4}=6
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">4</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">4</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.04em;vertical-align:-0.08390500000000001em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.956095em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord">4</span></span></span><span style="top:-2.916095em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702
-c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
-c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
-c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
-s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
-c69,-144,104.5,-217.7,106.5,-221
-l0 -0
-c5.3,-9.3,12,-14,20,-14
-H400000v40H845.2724
-s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
-c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
-M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.08390500000000001em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span></span></span></span></span></p>
-</li>
-<li>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>+</mo><mn>5</mn><mo>÷</mo><mn>5</mn><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">5+5÷5=6
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">5</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">5</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">÷</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">5</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span></span></span></span></span></p>
-</li>
-<li>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mo>×</mo><mn>6</mn><mo>÷</mo><mn>6</mn><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">6×6÷6=6
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">6</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">6</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">÷</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span></span></span></span></span></p>
-</li>
-<li>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn><mo>−</mo><mn>7</mn><mo>÷</mo><mn>7</mn><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">7-7÷7=6
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">7</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">7</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">÷</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">7</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span></span></span></span></span></p>
-</li>
-<li>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msqrt><mrow><mn>8</mn><mo>+</mo><mn>8</mn><mo>÷</mo><mn>8</mn></mrow></msqrt><mo stretchy="false">)</mo><mo stretchy="false">!</mo><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">(\sqrt{8+8÷8})!=6
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.16443em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9144300000000001em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord">8</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">8</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">÷</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">8</span></span></span><span style="top:-2.8744300000000003em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702
-c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
-c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
-c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
-s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
-c69,-144,104.5,-217.7,106.5,-221
-l0 -0
-c5.3,-9.3,12,-14,20,-14
-H400000v40H845.2724
-s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
-c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
-M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.12556999999999996em;"><span></span></span></span></span></span><span class="mclose">)</span><span class="mclose">!</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span></span></span></span></span></p>
-</li>
-<li>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mn>9</mn></msqrt><mo>×</mo><msqrt><mn>9</mn></msqrt><mo>−</mo><msqrt><mn>9</mn></msqrt><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">\sqrt{9}×\sqrt{9}-\sqrt{9}=6
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.04em;vertical-align:-0.08390500000000001em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.956095em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord">9</span></span></span><span style="top:-2.916095em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702
-c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
-c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
-c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
-s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
-c69,-144,104.5,-217.7,106.5,-221
-l0 -0
-c5.3,-9.3,12,-14,20,-14
-H400000v40H845.2724
-s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
-c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
-M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.08390500000000001em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.04em;vertical-align:-0.08390500000000001em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.956095em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord">9</span></span></span><span style="top:-2.916095em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702
-c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
-c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
-c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
-s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
-c69,-144,104.5,-217.7,106.5,-221
-l0 -0
-c5.3,-9.3,12,-14,20,-14
-H400000v40H845.2724
-s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
-c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
-M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.08390500000000001em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.04em;vertical-align:-0.08390500000000001em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.956095em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord">9</span></span></span><span style="top:-2.916095em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702
-c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
-c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
-c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
-s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
-c69,-144,104.5,-217.7,106.5,-221
-l0 -0
-c5.3,-9.3,12,-14,20,-14
-H400000v40H845.2724
-s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
-c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
-M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.08390500000000001em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span></span></span></span></span></p>
-</li>
-<li>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msqrt><mrow><mn>10</mn><mo>−</mo><mn>10</mn><mo>÷</mo><mn>10</mn></mrow></msqrt><mo stretchy="false">)</mo><mo stretchy="false">!</mo><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">(\sqrt{10-10÷10})!=6
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.16443em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9144300000000001em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord">1</span><span class="mord">0</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span><span class="mord">0</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">÷</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span><span class="mord">0</span></span></span><span style="top:-2.8744300000000003em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702
-c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
-c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
-c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
-s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
-c69,-144,104.5,-217.7,106.5,-221
-l0 -0
-c5.3,-9.3,12,-14,20,-14
-H400000v40H845.2724
-s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
-c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
-M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.12556999999999996em;"><span></span></span></span></span></span><span class="mclose">)</span><span class="mclose">!</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span></span></span></span></span></p>
-</li>
-</ol>
-<p>怎么样？你们做对了几道题？欢迎在评论区留下你们的做题时间，答案与其他解题方式吧！</p>
-]]></content>
-      <categories>
-        <category>挑战</category>
-      </categories>
-      <tags>
-        <tag>数学</tag>
-        <tag>挑战</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>论幻方？</title>
-    <url>/2023/07/01/%E8%AE%BA%E5%B9%BB%E6%96%B9%EF%BC%9F/</url>
-    <content><![CDATA[<h1>幻方</h1>
-<h1>简介</h1>
-<p>大家听过幻方吗？</p>
-<p>​		没错，就是一个正方形，其中每条边、每条行、每条对角线上的数相加起来后，结果都一样。那么，你想知道如何制造一个幻方吗？来这里学习学习吧！</p>
-<span id="more"></span>
-<p>首先，让你看看幻方究竟是什么：</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">各对角线之和</th>
-<th style="text-align:center">第1列</th>
-<th style="text-align:center">第2列</th>
-<th style="text-align:center">第3列</th>
-<th style="text-align:center">第4列</th>
-<th style="text-align:center">第5列</th>
-<th style="text-align:center">各行之和</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center"><strong>第1行</strong></td>
-<td style="text-align:center"><strong>17</strong></td>
-<td style="text-align:center"><strong>24</strong></td>
-<td style="text-align:center"><strong>1</strong></td>
-<td style="text-align:center"><strong>8</strong></td>
-<td style="text-align:center"><strong>15</strong></td>
-<td style="text-align:center"><font color="red"><strong>65</strong></font></td>
-</tr>
-<tr>
-<td style="text-align:center"><strong>第2行</strong></td>
-<td style="text-align:center"><strong>23</strong></td>
-<td style="text-align:center"><strong>5</strong></td>
-<td style="text-align:center"><strong>7</strong></td>
-<td style="text-align:center"><strong>14</strong></td>
-<td style="text-align:center"><strong>16</strong></td>
-<td style="text-align:center"><font color="red"><strong>65</strong></font></td>
-</tr>
-<tr>
-<td style="text-align:center"><strong>第3行</strong></td>
-<td style="text-align:center"><strong>4</strong></td>
-<td style="text-align:center"><strong>6</strong></td>
-<td style="text-align:center"><strong>13</strong></td>
-<td style="text-align:center"><strong>20</strong></td>
-<td style="text-align:center"><strong>22</strong></td>
-<td style="text-align:center"><font color="red"><strong>65</strong></font></td>
-</tr>
-<tr>
-<td style="text-align:center"><strong>第4行</strong></td>
-<td style="text-align:center"><strong>10</strong></td>
-<td style="text-align:center"><strong>12</strong></td>
-<td style="text-align:center"><strong>19</strong></td>
-<td style="text-align:center"><strong>21</strong></td>
-<td style="text-align:center"><strong>3</strong></td>
-<td style="text-align:center"><font color="red"><strong>65</strong></font></td>
-</tr>
-<tr>
-<td style="text-align:center"><strong>第5行</strong></td>
-<td style="text-align:center"><strong>11</strong></td>
-<td style="text-align:center"><strong>18</strong></td>
-<td style="text-align:center"><strong>25</strong></td>
-<td style="text-align:center"><strong>2</strong></td>
-<td style="text-align:center"><strong>9</strong></td>
-<td style="text-align:center"><font color="red"><strong>65</strong></font></td>
-</tr>
-<tr>
-<td style="text-align:center"><strong>各列之和</strong></td>
-<td style="text-align:center"><font color="red"><strong>65</strong></font></td>
-<td style="text-align:center"><font color="red"><strong>65</strong></font></td>
-<td style="text-align:center"><font color="red"><strong>65</strong></font></td>
-<td style="text-align:center"><font color="red"><strong>65</strong></font></td>
-<td style="text-align:center"><font color="red"><strong>65</strong></font></td>
-<td style="text-align:center"><font color="red"><strong>65</strong></font></td>
-</tr>
-</tbody>
-</table>
-<p>​		 快看，<strong>黑色部分的字就是一个奇数阶幻方</strong>，而**<font color="red">红色</font>的字就是当前所在的行或列或对角线的和**，是不是都一样？</p>
-<p>好了，现在我们步入正题。</p>
-<h1>实现</h1>
-<p>​		幻方分为奇数阶幻方与偶数阶幻方，今天我们先一起学习一下<strong>奇数阶幻方</strong>，偶数阶幻方我们以后再学。</p>
-<p>学会制作奇数阶幻方，你需要记住下面这个口诀：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">一字首行正中间，</span><br><span class="line">依次斜填右上方，</span><br><span class="line">上出边界下地狱，</span><br><span class="line">右出边界坐火车，</span><br><span class="line">遇到重复跟老大，</span><br><span class="line">学会你就顶呱呱！</span><br></pre></td></tr></table></figure>
-<p>我们以三阶幻方为例来解释：</p>
-<ol>
-<li>首先，你需要把数字一填在第一行的正中间。</li>
-</ol>
-<p>例如：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">x 1 x  （“x”代表还没有写的数）</span><br><span class="line"></span><br><span class="line">x x x</span><br><span class="line"></span><br><span class="line">x x x</span><br></pre></td></tr></table></figure>
-<ol start="2">
-<li>接着，我们要一直在上一个数的右上方填上上一个数加一的数。</li>
-</ol>
-<p>例如：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">    2  （写在1的右上方）</span><br><span class="line"></span><br><span class="line">x 1 x  （1多1是2）</span><br><span class="line"></span><br><span class="line">x x x  </span><br><span class="line"></span><br><span class="line">x x x</span><br></pre></td></tr></table></figure>
-<ol start="3">
-<li>再往右上方填数的过程中，如果一个数超出了上边界，那么就让它下地狱（去到同一列的最下面一行）。</li>
-</ol>
-<p>例如：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">   2 ------  （这里记住要是同一列哦）</span><br><span class="line"></span><br><span class="line">—————      |    （“—”代表上边界）</span><br><span class="line"></span><br><span class="line">x 1 x      |</span><br><span class="line"></span><br><span class="line">x x x      |</span><br><span class="line"></span><br><span class="line">x x 2  &lt;----</span><br></pre></td></tr></table></figure>
-<ol start="4">
-<li>再往右上方填数的过程中，如果一个数超出了右边界，那么就让它坐火车去到最左边（去到同一行的最左边一列）。</li>
-</ol>
-<p>例如：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">   x 1 x |</span><br><span class="line"></span><br><span class="line">-&gt; 3 x x | 3 --   （这里记住要是同一行哦）</span><br><span class="line"></span><br><span class="line">|  x x 2 |    |   （“ | ”代表右边界）</span><br><span class="line"></span><br><span class="line">------&lt;--------</span><br></pre></td></tr></table></figure>
-<ol start="5">
-<li>再往右上方填数的过程中，如果右上方已经被填过数了，就把数填到上一个数的下方。</li>
-</ol>
-<p>例如：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">x 1 x</span><br><span class="line"></span><br><span class="line">3 x x    （这里本该在3的右上方填上4，但那里已经填了1，那就把4填到3的下面）</span><br><span class="line"></span><br><span class="line">4 x 2</span><br></pre></td></tr></table></figure>
-<ol start="6">
-<li>再往右上方填数的过程中，如果这个数既不在任意一行，也不在任意一列，即同时超出上边界与右边界时，就把数填到上一个数的下方。</li>
-</ol>
-<p>例如：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">        7---   </span><br><span class="line"></span><br><span class="line">——————     |   （这里的7本该在6的右上方，但6的右上方</span><br><span class="line"></span><br><span class="line">x 1 6 |    |     既不在任意一行，也不在任意一列，就把</span><br><span class="line"></span><br><span class="line">3 5 7 | &lt;---    它填到6的下面）</span><br><span class="line"></span><br><span class="line">4 x 2 |  </span><br></pre></td></tr></table></figure>
-<p>讲了这么多，相信你已经学会如何制造一个奇数阶幻方了吧！请记得那句口诀哦！</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">一字首行正中间，</span><br><span class="line">依次斜填右上方，</span><br><span class="line">上出边界下地狱，</span><br><span class="line">右出边界坐火车，</span><br><span class="line">遇到重复跟老大，</span><br><span class="line">学会你就顶呱呱！</span><br></pre></td></tr></table></figure>
-<h1>彩蛋</h1>
-<p>对了，顺便也给大家提供了制造奇数阶幻方的C++编程代码，感兴趣的可以自取，我们再见！</p>
-<h2 id="代码：">代码：</h2>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> a[<span class="number">450</span>][<span class="number">450</span>];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> n;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;请输入一个奇数:&quot;</span>;</span><br><span class="line">	cin&gt;&gt;n;</span><br><span class="line">	<span class="type">int</span> w=n;</span><br><span class="line">	<span class="type">int</span> j=w/<span class="number">2</span>,i=<span class="number">0</span>;</span><br><span class="line">	<span class="type">int</span> c=w*w;</span><br><span class="line">	<span class="type">int</span> v=<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span>(c--)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(a[i][j]!=<span class="number">0</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			i=(i+<span class="number">1</span>)%w;</span><br><span class="line">		&#125;</span><br><span class="line">		a[i][j]=v;</span><br><span class="line">		v++;</span><br><span class="line">		<span class="keyword">if</span>(<span class="number">0</span>==i&amp;&amp;j==w<span class="number">-1</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			i++;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">		&#123;</span><br><span class="line">			<span class="type">int</span> x=(i<span class="number">-1</span>+w)%w;</span><br><span class="line">			<span class="type">int</span> y=(j+<span class="number">1</span>)%w;</span><br><span class="line">			<span class="keyword">if</span>(a[x][y]==<span class="number">0</span>)</span><br><span class="line">			&#123;</span><br><span class="line">				i=x;</span><br><span class="line">				j=y;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;w;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;w;j++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span>(w*w&lt;<span class="number">100</span>)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="built_in">printf</span>(<span class="string">&quot;%3.d&quot;</span>,a[i][j]);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span></span><br><span class="line">			&#123;</span><br><span class="line">				<span class="keyword">if</span>(w*w&lt;<span class="number">1000</span>)</span><br><span class="line">				&#123;</span><br><span class="line">					<span class="built_in">printf</span>(<span class="string">&quot;%4.d&quot;</span>,a[i][j]);</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">if</span>(w*w&lt;<span class="number">10000</span>&amp;&amp;w*w&gt;<span class="number">9999</span>)</span><br><span class="line">				&#123;</span><br><span class="line">					<span class="built_in">printf</span>(<span class="string">&quot;%5.d&quot;</span>,a[i][j]);</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		cout&lt;&lt;<span class="string">&quot;\n\n&quot;</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>谜题</category>
-      </categories>
-      <tags>
-        <tag>说明</tag>
-        <tag>数学</tag>
       </tags>
   </entry>
   <entry>
@@ -795,34 +421,6 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
       </tags>
   </entry>
   <entry>
-    <title>关于我</title>
-    <url>/2023/04/29/%E5%85%B3%E4%BA%8E%E6%88%91/</url>
-    <content><![CDATA[<h1>关于我</h1>
-<h2 id="介绍我自己">介绍我自己</h2>
-<blockquote>
-<p>xiaogui lives in china</p>
-</blockquote>
-<p>姓名：龟龟<br>
-年龄：青春年华<br>
-现居：广州<br>
-邮箱：work@cutexiaoguigui.eu.org<br>
-属相：兔</p>
-<span id="more"></span>
-<blockquote>
-<p>兔属相代表着机智、细心、温柔和谨慎，兔子是十二生肖中最具有亲和力的动物之一，善于倾听和关怀他人。</p>
-</blockquote>
-<p><img src="https://cutexiaoguigui.eu.org/yuxuaner.ico" alt="龟龟" title="可爱的龟"></p>
-<h2 id="介绍龟之飞">介绍龟之飞</h2>
-<p><a href="https://cutexiaoguigui.github.io/2023/04/29/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E9%BE%9F%E4%B9%8B%E9%A3%9E%EF%BC%81/" title="龟之飞">龟之飞介绍</a></p>
-]]></content>
-      <categories>
-        <category>龟之飞官方</category>
-      </categories>
-      <tags>
-        <tag>介绍</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>使用说明</title>
     <url>/2023/04/29/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</url>
     <content><![CDATA[<h1>龟之飞网站使用说明</h1>
@@ -868,6 +466,408 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
       <tags>
         <tag>说明</tag>
         <tag>官方</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于我</title>
+    <url>/2023/04/29/%E5%85%B3%E4%BA%8E%E6%88%91/</url>
+    <content><![CDATA[<h1>关于我</h1>
+<h2 id="介绍我自己">介绍我自己</h2>
+<blockquote>
+<p>xiaogui lives in china</p>
+</blockquote>
+<p>姓名：龟龟<br>
+年龄：青春年华<br>
+现居：广州<br>
+邮箱：work@cutexiaoguigui.eu.org<br>
+属相：兔</p>
+<span id="more"></span>
+<blockquote>
+<p>兔属相代表着机智、细心、温柔和谨慎，兔子是十二生肖中最具有亲和力的动物之一，善于倾听和关怀他人。</p>
+</blockquote>
+<p><img src="https://cutexiaoguigui.eu.org/yuxuaner.ico" alt="龟龟" title="可爱的龟"></p>
+<h2 id="介绍龟之飞">介绍龟之飞</h2>
+<p><a href="https://cutexiaoguigui.github.io/2023/04/29/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E9%BE%9F%E4%B9%8B%E9%A3%9E%EF%BC%81/" title="龟之飞">龟之飞介绍</a></p>
+]]></content>
+      <categories>
+        <category>龟之飞官方</category>
+      </categories>
+      <tags>
+        <tag>介绍</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>挑战1</title>
+    <url>/2023/07/03/%E6%8C%91%E6%88%981/</url>
+    <content><![CDATA[<h1>挑战来临！</h1>
+<p>为了活跃气氛，我决定，向大家发起一个挑战！让我们一起看看谁的答案是最正确也最快的吧！</p>
+<span id="more"></span>
+<blockquote>
+<p>本次题目类似24点，大家准备迎接挑战吧！</p>
+</blockquote>
+<h2 id="规则">规则</h2>
+<blockquote>
+<p>若题目相对于你说过难，只满足第1、2条规则即可，若想加强难度，则同时满足第1、2、3条。</p>
+</blockquote>
+<ol>
+<li>
+<p>填入数学符号，满足答案等于6。</p>
+</li>
+<li>
+<p>可使用任意数学符号，包括但不限于：</p>
+<ul>
+<li>
+<p>“+”</p>
+</li>
+<li>
+<p>“-”</p>
+</li>
+<li>
+<p>“×”</p>
+</li>
+<li>
+<p>“÷”</p>
+</li>
+<li>
+<p>“√￣”</p>
+</li>
+<li>
+<p>“!”</p>
+</li>
+</ul>
+</li>
+<li>
+<p>不得引入新的数字，如：</p>
+<ul>
+<li>X²，引入了“2”，即平方，不可以。</li>
+<li>³√￣，引入了“3”，不可以。</li>
+</ul>
+</li>
+</ol>
+<h2 id="题目">题目</h2>
+<ol>
+<li>
+<p>0	0	0=6</p>
+</li>
+<li>
+<p>1	1	1=6</p>
+</li>
+<li>
+<p>2	2	2=6</p>
+</li>
+<li>
+<p>3	3	3=6</p>
+</li>
+<li>
+<p>4	4	4=6</p>
+</li>
+<li>
+<p>5	5	5=6</p>
+</li>
+<li>
+<p>6	6	6=6</p>
+</li>
+<li>
+<p>7	7	7=6</p>
+</li>
+<li>
+<p>8	8	8=6</p>
+</li>
+<li>
+<p>9	9	9=6</p>
+</li>
+<li>
+<p>10	10	10=6</p>
+</li>
+</ol>
+<h2 id="思考时间">思考时间</h2>
+<blockquote>
+<p>10分钟！</p>
+</blockquote>
+<p>🤔 思考、思索</p>
+<p>💭 冥想、思考</p>
+<p>🧠 头脑、思维</p>
+<p>💡 灵感、启发</p>
+<p>🤯 头脑爆炸、思维混乱</p>
+<p>😶 陷入沉思、默默思考</p>
+<p>📝 记下想法、记录思考的结果</p>
+<p>…</p>
+<h2 id="揭晓答案">揭晓答案</h2>
+<ol>
+<li>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">!</mo><mo>+</mo><mn>0</mn><mo stretchy="false">!</mo><mo>+</mo><mn>0</mn><mo stretchy="false">!</mo><mo stretchy="false">)</mo><mo stretchy="false">!</mo><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">(0!+0!+0!)!=6
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">0</span><span class="mclose">!</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord">0</span><span class="mclose">!</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">0</span><span class="mclose">!</span><span class="mclose">)</span><span class="mclose">!</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span></span></span></span></span></p>
+</li>
+<li>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mn>1</mn><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">!</mo><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">(1+1+1)!=6
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mclose">!</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span></span></span></span></span></p>
+</li>
+<li>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">2+2+2=6
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span></span></span></span></span></p>
+</li>
+<li>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>×</mo><mn>3</mn><mo>−</mo><mn>3</mn><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">3×3-3=6
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span></span></span></span></span></p>
+</li>
+<li>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>+</mo><mn>4</mn><mo>−</mo><msqrt><mn>4</mn></msqrt><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">4+4-\sqrt{4}=6
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">4</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">4</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.04em;vertical-align:-0.08390500000000001em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.956095em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord">4</span></span></span><span style="top:-2.916095em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.08390500000000001em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span></span></span></span></span></p>
+</li>
+<li>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>+</mo><mn>5</mn><mo>÷</mo><mn>5</mn><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">5+5÷5=6
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">5</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">5</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">÷</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">5</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span></span></span></span></span></p>
+</li>
+<li>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mo>×</mo><mn>6</mn><mo>÷</mo><mn>6</mn><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">6×6÷6=6
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">6</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">6</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">÷</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span></span></span></span></span></p>
+</li>
+<li>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn><mo>−</mo><mn>7</mn><mo>÷</mo><mn>7</mn><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">7-7÷7=6
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">7</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">7</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">÷</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">7</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span></span></span></span></span></p>
+</li>
+<li>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msqrt><mrow><mn>8</mn><mo>+</mo><mn>8</mn><mo>÷</mo><mn>8</mn></mrow></msqrt><mo stretchy="false">)</mo><mo stretchy="false">!</mo><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">(\sqrt{8+8÷8})!=6
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.16443em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9144300000000001em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord">8</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">8</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">÷</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">8</span></span></span><span style="top:-2.8744300000000003em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.12556999999999996em;"><span></span></span></span></span></span><span class="mclose">)</span><span class="mclose">!</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span></span></span></span></span></p>
+</li>
+<li>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mn>9</mn></msqrt><mo>×</mo><msqrt><mn>9</mn></msqrt><mo>−</mo><msqrt><mn>9</mn></msqrt><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">\sqrt{9}×\sqrt{9}-\sqrt{9}=6
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.04em;vertical-align:-0.08390500000000001em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.956095em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord">9</span></span></span><span style="top:-2.916095em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.08390500000000001em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.04em;vertical-align:-0.08390500000000001em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.956095em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord">9</span></span></span><span style="top:-2.916095em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.08390500000000001em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.04em;vertical-align:-0.08390500000000001em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.956095em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord">9</span></span></span><span style="top:-2.916095em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.08390500000000001em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span></span></span></span></span></p>
+</li>
+<li>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msqrt><mrow><mn>10</mn><mo>−</mo><mn>10</mn><mo>÷</mo><mn>10</mn></mrow></msqrt><mo stretchy="false">)</mo><mo stretchy="false">!</mo><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">(\sqrt{10-10÷10})!=6
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.16443em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9144300000000001em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord">1</span><span class="mord">0</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span><span class="mord">0</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">÷</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span><span class="mord">0</span></span></span><span style="top:-2.8744300000000003em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.12556999999999996em;"><span></span></span></span></span></span><span class="mclose">)</span><span class="mclose">!</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span></span></span></span></span></p>
+</li>
+</ol>
+<p>怎么样？你们做对了几道题？欢迎在评论区留下你们的做题时间，答案与其他解题方式吧！</p>
+]]></content>
+      <categories>
+        <category>挑战</category>
+      </categories>
+      <tags>
+        <tag>数学</tag>
+        <tag>挑战</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>龟之飞</title>
+    <url>/2023/04/29/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E9%BE%9F%E4%B9%8B%E9%A3%9E%EF%BC%81/</url>
+    <content><![CDATA[<h1>欢迎来到“龟之飞”</h1>
+<p>欢迎大家来到我的博客网站“<strong>龟之飞</strong>”！这里是一个充满活力和创意的社区，我们致力于分享各种有趣的技术和艺术内容。</p>
+<h2 id="关于我们">关于我们</h2>
+<p>作为一个博客网站，我们提供了一个轻松愉悦的阅读环境，让大家可以尽情地分享和创作自己的想法和经验。在这里，您可以看到来自全球各地的作者们分享的各种有趣、有趣的故事和经验——从科技和编程到设计和生活方式，再到文化和旅行等等。</p>
+<h2 id="使用说明">使用说明</h2>
+<p>本站使用侧边栏来导航，拥有多样化的功能：可以对文章评论、搜索文章、查看动态等。若您想深入了解，可以前往 <a href="https://cutexiaoguigui.eu.org/2023/04/29/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" title="使用说明"><strong>龟之飞</strong>使用说明</a> 了解更多。</p>
+<h2 id="设计理念">设计理念</h2>
+<p>我们的网站在设计上力求简单和易用，让读者可以更加专注于内容本身。我们采用了响应式布局，使得网站可以自适应不同的屏幕大小，从而在桌面电脑、平板电脑和智能手机上都能够获得最佳的视觉效果和用户体验。</p>
+<p>此外，我们的网站还提供了一些方便的功能，例如评论区和社交分享按钮等。这些功能可以帮助读者更好地互动和分享内容，同时也为作者们提供了反馈和支持。</p>
+<h2 id="加入我们">加入我们</h2>
+<p>如果您是一个具有创意和独立思考能力的作者，我们非常欢迎您来加入我们的社区。在这里，您可以享受到自由创作的乐趣，同时也可以结识各种有趣的朋友和同行。</p>
+<p>如果您是一个对各种各样的技术和艺术感兴趣的读者，我们同样欢迎您的加入和支持。在这里，您可以找到各种有趣的内容，并与作者们互动和交流。</p>
+<p>总之，“<strong>龟之飞</strong>”是一个充满活力和创意的博客网站，我们期待与您一起探索更多的可能性。如果您有任何建议或意见，请随时与我们联系。感谢您的支持，祝您在“<strong>龟之飞</strong>”度过愉快的时光！</p>
+]]></content>
+      <categories>
+        <category>龟之飞官方</category>
+      </categories>
+      <tags>
+        <tag>介绍</tag>
+        <tag>官方</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>论幻方？</title>
+    <url>/2023/07/01/%E8%AE%BA%E5%B9%BB%E6%96%B9%EF%BC%9F/</url>
+    <content><![CDATA[<h1>幻方</h1>
+<h1>简介</h1>
+<p>大家听过幻方吗？</p>
+<p>​		没错，就是一个正方形，其中每条边、每条行、每条对角线上的数相加起来后，结果都一样。那么，你想知道如何制造一个幻方吗？来这里学习学习吧！</p>
+<span id="more"></span>
+<p>首先，让你看看幻方究竟是什么：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">各对角线之和</th>
+<th style="text-align:center">第1列</th>
+<th style="text-align:center">第2列</th>
+<th style="text-align:center">第3列</th>
+<th style="text-align:center">第4列</th>
+<th style="text-align:center">第5列</th>
+<th style="text-align:center">各行之和</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>第1行</strong></td>
+<td style="text-align:center"><strong>17</strong></td>
+<td style="text-align:center"><strong>24</strong></td>
+<td style="text-align:center"><strong>1</strong></td>
+<td style="text-align:center"><strong>8</strong></td>
+<td style="text-align:center"><strong>15</strong></td>
+<td style="text-align:center"><font color="red"><strong>65</strong></font></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>第2行</strong></td>
+<td style="text-align:center"><strong>23</strong></td>
+<td style="text-align:center"><strong>5</strong></td>
+<td style="text-align:center"><strong>7</strong></td>
+<td style="text-align:center"><strong>14</strong></td>
+<td style="text-align:center"><strong>16</strong></td>
+<td style="text-align:center"><font color="red"><strong>65</strong></font></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>第3行</strong></td>
+<td style="text-align:center"><strong>4</strong></td>
+<td style="text-align:center"><strong>6</strong></td>
+<td style="text-align:center"><strong>13</strong></td>
+<td style="text-align:center"><strong>20</strong></td>
+<td style="text-align:center"><strong>22</strong></td>
+<td style="text-align:center"><font color="red"><strong>65</strong></font></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>第4行</strong></td>
+<td style="text-align:center"><strong>10</strong></td>
+<td style="text-align:center"><strong>12</strong></td>
+<td style="text-align:center"><strong>19</strong></td>
+<td style="text-align:center"><strong>21</strong></td>
+<td style="text-align:center"><strong>3</strong></td>
+<td style="text-align:center"><font color="red"><strong>65</strong></font></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>第5行</strong></td>
+<td style="text-align:center"><strong>11</strong></td>
+<td style="text-align:center"><strong>18</strong></td>
+<td style="text-align:center"><strong>25</strong></td>
+<td style="text-align:center"><strong>2</strong></td>
+<td style="text-align:center"><strong>9</strong></td>
+<td style="text-align:center"><font color="red"><strong>65</strong></font></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>各列之和</strong></td>
+<td style="text-align:center"><font color="red"><strong>65</strong></font></td>
+<td style="text-align:center"><font color="red"><strong>65</strong></font></td>
+<td style="text-align:center"><font color="red"><strong>65</strong></font></td>
+<td style="text-align:center"><font color="red"><strong>65</strong></font></td>
+<td style="text-align:center"><font color="red"><strong>65</strong></font></td>
+<td style="text-align:center"><font color="red"><strong>65</strong></font></td>
+</tr>
+</tbody>
+</table>
+<p>​		 快看，<strong>黑色部分的字就是一个奇数阶幻方</strong>，而**<font color="red">红色</font>的字就是当前所在的行或列或对角线的和**，是不是都一样？</p>
+<p>好了，现在我们步入正题。</p>
+<h1>实现</h1>
+<p>​		幻方分为奇数阶幻方与偶数阶幻方，今天我们先一起学习一下<strong>奇数阶幻方</strong>，偶数阶幻方我们以后再学。</p>
+<p>学会制作奇数阶幻方，你需要记住下面这个口诀：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">一字首行正中间，</span><br><span class="line">依次斜填右上方，</span><br><span class="line">上出边界下地狱，</span><br><span class="line">右出边界坐火车，</span><br><span class="line">遇到重复跟老大，</span><br><span class="line">学会你就顶呱呱！</span><br></pre></td></tr></table></figure>
+<p>我们以三阶幻方为例来解释：</p>
+<ol>
+<li>首先，你需要把数字一填在第一行的正中间。</li>
+</ol>
+<p>例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">x 1 x  （“x”代表还没有写的数）</span><br><span class="line"></span><br><span class="line">x x x</span><br><span class="line"></span><br><span class="line">x x x</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>接着，我们要一直在上一个数的右上方填上上一个数加一的数。</li>
+</ol>
+<p>例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">    2  （写在1的右上方）</span><br><span class="line"></span><br><span class="line">x 1 x  （1多1是2）</span><br><span class="line"></span><br><span class="line">x x x  </span><br><span class="line"></span><br><span class="line">x x x</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>再往右上方填数的过程中，如果一个数超出了上边界，那么就让它下地狱（去到同一列的最下面一行）。</li>
+</ol>
+<p>例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">   2 ------  （这里记住要是同一列哦）</span><br><span class="line"></span><br><span class="line">—————      |    （“—”代表上边界）</span><br><span class="line"></span><br><span class="line">x 1 x      |</span><br><span class="line"></span><br><span class="line">x x x      |</span><br><span class="line"></span><br><span class="line">x x 2  &lt;----</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>再往右上方填数的过程中，如果一个数超出了右边界，那么就让它坐火车去到最左边（去到同一行的最左边一列）。</li>
+</ol>
+<p>例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">   x 1 x |</span><br><span class="line"></span><br><span class="line">-&gt; 3 x x | 3 --   （这里记住要是同一行哦）</span><br><span class="line"></span><br><span class="line">|  x x 2 |    |   （“ | ”代表右边界）</span><br><span class="line"></span><br><span class="line">------&lt;--------</span><br></pre></td></tr></table></figure>
+<ol start="5">
+<li>再往右上方填数的过程中，如果右上方已经被填过数了，就把数填到上一个数的下方。</li>
+</ol>
+<p>例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">x 1 x</span><br><span class="line"></span><br><span class="line">3 x x    （这里本该在3的右上方填上4，但那里已经填了1，那就把4填到3的下面）</span><br><span class="line"></span><br><span class="line">4 x 2</span><br></pre></td></tr></table></figure>
+<ol start="6">
+<li>再往右上方填数的过程中，如果这个数既不在任意一行，也不在任意一列，即同时超出上边界与右边界时，就把数填到上一个数的下方。</li>
+</ol>
+<p>例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">        7---   </span><br><span class="line"></span><br><span class="line">——————     |   （这里的7本该在6的右上方，但6的右上方</span><br><span class="line"></span><br><span class="line">x 1 6 |    |     既不在任意一行，也不在任意一列，就把</span><br><span class="line"></span><br><span class="line">3 5 7 | &lt;---    它填到6的下面）</span><br><span class="line"></span><br><span class="line">4 x 2 |  </span><br></pre></td></tr></table></figure>
+<p>讲了这么多，相信你已经学会如何制造一个奇数阶幻方了吧！请记得那句口诀哦！</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">一字首行正中间，</span><br><span class="line">依次斜填右上方，</span><br><span class="line">上出边界下地狱，</span><br><span class="line">右出边界坐火车，</span><br><span class="line">遇到重复跟老大，</span><br><span class="line">学会你就顶呱呱！</span><br></pre></td></tr></table></figure>
+<h1>彩蛋</h1>
+<p>对了，顺便也给大家提供了制造奇数阶幻方的C++编程代码，感兴趣的可以自取，我们再见！</p>
+<h2 id="代码：">代码：</h2>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> a[<span class="number">450</span>][<span class="number">450</span>];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> n;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;请输入一个奇数:&quot;</span>;</span><br><span class="line">	cin&gt;&gt;n;</span><br><span class="line">	<span class="type">int</span> w=n;</span><br><span class="line">	<span class="type">int</span> j=w/<span class="number">2</span>,i=<span class="number">0</span>;</span><br><span class="line">	<span class="type">int</span> c=w*w;</span><br><span class="line">	<span class="type">int</span> v=<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span>(c--)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(a[i][j]!=<span class="number">0</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			i=(i+<span class="number">1</span>)%w;</span><br><span class="line">		&#125;</span><br><span class="line">		a[i][j]=v;</span><br><span class="line">		v++;</span><br><span class="line">		<span class="keyword">if</span>(<span class="number">0</span>==i&amp;&amp;j==w<span class="number">-1</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			i++;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">		&#123;</span><br><span class="line">			<span class="type">int</span> x=(i<span class="number">-1</span>+w)%w;</span><br><span class="line">			<span class="type">int</span> y=(j+<span class="number">1</span>)%w;</span><br><span class="line">			<span class="keyword">if</span>(a[x][y]==<span class="number">0</span>)</span><br><span class="line">			&#123;</span><br><span class="line">				i=x;</span><br><span class="line">				j=y;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;w;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;w;j++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span>(w*w&lt;<span class="number">100</span>)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="built_in">printf</span>(<span class="string">&quot;%3.d&quot;</span>,a[i][j]);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span></span><br><span class="line">			&#123;</span><br><span class="line">				<span class="keyword">if</span>(w*w&lt;<span class="number">1000</span>)</span><br><span class="line">				&#123;</span><br><span class="line">					<span class="built_in">printf</span>(<span class="string">&quot;%4.d&quot;</span>,a[i][j]);</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">if</span>(w*w&lt;<span class="number">10000</span>&amp;&amp;w*w&gt;<span class="number">9999</span>)</span><br><span class="line">				&#123;</span><br><span class="line">					<span class="built_in">printf</span>(<span class="string">&quot;%5.d&quot;</span>,a[i][j]);</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		cout&lt;&lt;<span class="string">&quot;\n\n&quot;</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>谜题</category>
+      </categories>
+      <tags>
+        <tag>说明</tag>
+        <tag>数学</tag>
       </tags>
   </entry>
 </search>
