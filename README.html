@@ -17,7 +17,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>Cloudflare 邮箱收发 |  龟之飞</title>
+      <title> 龟之飞</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/yuxuan.ico" />
@@ -71,91 +71,83 @@
     <main class="content on">
       <section class="outer">
   <article
-  id="post-Cloudflare-邮箱收发"
-  class="article article-type-post"
+  id="page-"
+  class="article article-type-page"
   itemscope
   itemprop="blogPost"
   data-scroll-reveal
 >
   <div class="article-inner">
-    
-    <header class="article-header">
        
-<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  Cloudflare 邮箱收发
-</h1>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2023/08/05/Cloudflare-%E9%82%AE%E7%AE%B1%E6%94%B6%E5%8F%91/" class="article-date">
-  <time datetime="2023-08-05T04:00:00.000Z" itemprop="datePublished">2023-08-05</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
-  </div>
-  
-<div class="word_count">
-    <span class="post-time">
-        <span class="post-meta-item-icon">
-            <i class="ri-quill-pen-line"></i>
-            <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">396</span>
-        </span>
-    </span>
-
-    <span class="post-time">
-        &nbsp; | &nbsp;
-        <span class="post-meta-item-icon">
-            <i class="ri-book-open-line"></i>
-            <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">1 分钟</span>
-        </span>
-    </span>
-</div>
- 
-    </div>
-      
-    <div class="tocbot"></div>
-
-
-
-
-  
     <div class="article-entry" itemprop="articleBody">
        
-  <h1>Cloudflare 邮箱收发</h1>
-<p>周所周知，Cloudflare有一个邮件路由，可以配置你的域名邮箱，但是它只可以接受邮件，并不能发送邮件，那么，本期，我就教大家如何使用Cloudflare 邮箱实现发送功能！</p>
-<h2 id="准备">准备</h2>
-<p>想实现此功能，你需要：</p>
+  <h1>龟之飞</h1>
+<h2 id="介绍">介绍</h2>
+<p>使用hexo搭建的blog网站，可以对文章评论、搜索文章、查看动态等。采用了响应式布局，使得网站可以自适应不同的屏幕大小，从而在桌面电脑、平板电脑和智能手机上都能够获得最佳的视觉效果和用户体验。🐣</p>
+<p>⭐我们的网站地址是：<strong><a href="https://cutexiaoguigui.eu.org/">https://cutexiaoguigui.eu.org/</a></strong> ，备用站地址为：<strong><a target="_blank" rel="noopener" href="https://backup.cutexiaoguigui.eu.org/">https://backup.cutexiaoguigui.eu.org/</a></strong> 。</p>
+<blockquote>
 <ol>
-<li>一个谷歌邮箱</li>
-<li>谷歌账号需要<a target="_blank" rel="noopener" href="https://myaccount.google.com/security" title="两步验证">开启两步验证</a></li>
-<li><a target="_blank" rel="noopener" href="https://dash.cloudflare.com/email">Cloudflare电子路由</a>开启</li>
+<li>我们有许多方面的研究，有blog，ai，网盘等。</li>
+<li>见后续blog文章中有具体说明。</li>
 </ol>
-<h2 id="教学">教学</h2>
-<ol>
-<li>首先，我们先获取一个<a target="_blank" rel="noopener" href="https://myaccount.google.com/apppasswords" title="密码">专属应用密码</a>。
+</blockquote>
+<p>⭐若遇到任何问题，欢迎在wiki中与我们交流！😊</p>
+<h2 id="界面">界面</h2>
 <ul>
-<li>在 <code>选择应用</code> 列中选择 <code>其它（自定义名称）</code>，填入名称（什么都可以），点击 <code>生成</code>按钮</li>
-<li>然后，记住黄色框中的密码，此密码仅显示一次，一定要记牢</li>
+<li>首页：</li>
 </ul>
-</li>
-<li>打开<a target="_blank" rel="noopener" href="https://mail.google.com/mail/#settings/accounts">Gmail账号和导入</a>，找到<code>用这个地址发送邮件</code>，点击添加其他电子邮件，就会弹出一个网页</li>
-<li>在弹出的网页中有两个输入框，第一个输入框输入你的名称，建议输入你的Cloudflare邮箱的前缀，  例： <a href="mailto:users@example.com">users@example.com</a> 就输入users，电子邮件地址就填你的Cloudflare邮箱。然后，点<code>下一步</code></li>
+<p><img src="https://cutexiaoguigui.eu.org/images/%E9%A6%96%E9%A1%B5.png" alt="首页"></p>
+<ul>
+<li>文章：</li>
+</ul>
+<p><img src="https://cutexiaoguigui.eu.org/images/%E6%96%87%E7%AB%A0.png" alt="文章"></p>
+<ul>
+<li>夜间模式：</li>
+</ul>
+<p><img src="https://cutexiaoguigui.eu.org/images/%E5%A4%9C%E9%97%B4%E6%A8%A1%E5%BC%8F.png" alt="夜间模式"></p>
+<ul>
+<li>评论：</li>
+</ul>
+<p><img src="https://cutexiaoguigui.eu.org/images/%E8%AF%84%E8%AE%BA.png" alt="评论"></p>
+<h2 id="模块">模块</h2>
+<ul>
+<li>归档：</li>
+</ul>
+<p><img src="https://cutexiaoguigui.eu.org/images/%E5%BD%92%E6%A1%A3.png" alt="归档"></p>
+<ul>
+<li>分类：</li>
+</ul>
+<p><img src="https://cutexiaoguigui.eu.org/images/%E5%88%86%E7%B1%BB.png" alt="分类"></p>
+<ul>
+<li>标签：</li>
+</ul>
+<p><img src="https://cutexiaoguigui.eu.org/images/%E6%A0%87%E7%AD%BE.png" alt="标签"></p>
+<ul>
+<li>友情链接：</li>
+</ul>
+<p><img src="https://cutexiaoguigui.eu.org/images/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5.png" alt="友情链接"></p>
+<h2 id="文章">文章</h2>
+<p>这里有许多方面的文章，包括但不限于：</p>
+<ol>
+<li><a href="https://cutexiaoguigui.eu.org/tags/cloudflare/" title="cloudflare">cloudflare方面</a></li>
+<li><a href="https://cutexiaoguigui.eu.org/categories/%E6%8A%80%E6%9C%AF/" title="技术">技术方面</a></li>
+<li><a href="https://cutexiaoguigui.eu.org/tags/%E7%94%9F%E6%B4%BB/" title="生活">生活方面</a></li>
 </ol>
-<p><img src="https://cutexiaoguigui.eu.org/images/%E9%82%AE%E7%AE%B1.png" alt="示例"></p>
-<ol start="4">
-<li>接下来的页面请根据图面所示填写，SMTP服务器要修改成”<a target="_blank" rel="noopener" href="http://smtp.gmail.com">smtp.gmail.com</a>“，用户名写你的谷歌用户名，密码就写之前生成的应用密码。然后，点<code>添加账号</code></li>
+<p>代表文章：</p>
+<ol>
+<li><a href="https://cutexiaoguigui.eu.org/2023/07/05/Cloudflare-Tunnel/" title="cloudflared隧道">Cloudflare Tunnel</a></li>
+<li><a href="https://cutexiaoguigui.eu.org/2023/06/10/Cloudflare%20Pages/" title="Cloudflare Pages">Cloudflare Pages</a></li>
+<li><a href="https://cutexiaoguigui.eu.org/2023/05/14/hexo%E5%BB%BA%E7%AB%99/" title="hexo建站">hexo建站</a></li>
 </ol>
-<p><img src="https://cutexiaoguigui.eu.org/images/%E9%82%AE%E7%AE%B12.png" alt="示例"></p>
-<ol start="5">
-<li>这时，你的邮箱应该会收到一封邮件，点击确认后就大功告成啦！</li>
+<h2 id="相关技术">相关技术</h2>
+<p>其它方面的研究：</p>
+<ol>
+<li><a target="_blank" rel="noopener" href="https://ai.cutexiaoguigui.eu.org/" title="new bing">bingAI</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.fast.cutexiaoguigui.eu.org/" title="加速">github下载加速</a></li>
+<li><a target="_blank" rel="noopener" href="https://pan.cutexiaoguigui.eu.org/" title="网盘">网盘</a></li>
 </ol>
-<h2 id="发送方法">发送方法</h2>
-<p>来到<a target="_blank" rel="noopener" href="https://mail.google.com">谷歌邮箱</a>，点击写邮件，在<code>发件人(from)</code>处改为你的Cloudflare邮箱，再正常写邮件发送即可。</p>
+<h2 id="帮一下😊">帮一下😊</h2>
+<p>如果你喜欢就给个⭐starred吧！😊</p>
  
       <!-- reward -->
       
@@ -220,27 +212,15 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://cutexiaoguigui.eu.org/2023/08/05/Cloudflare-%E9%82%AE%E7%AE%B1%E6%94%B6%E5%8F%91/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://cutexiaoguigui.eu.org/README.html" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>  
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cloudflare/" rel="tag">cloudflare</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AF%B4%E6%98%8E/" rel="tag">说明</a></li></ul>
-
     </footer>
   </div>
 
    
-  <nav class="article-nav">
-    
-    
-      <a href="/2023/07/05/Cloudflare-Tunnel/" class="article-nav-link">
-        <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">Cloudflare Tunnel</div>
-      </a>
-    
-  </nav>
-
    
 <!-- valine评论 -->
 <div id="vcomments-box">
@@ -292,7 +272,6 @@
  
    
   
-    
 </article>
 
 </section>
@@ -439,22 +418,6 @@
 <script src="/js/lazyload.min.js"></script>
 
 <!-- Tocbot -->
- 
-<script src="/js/tocbot.min.js"></script>
-
-<script>
-  tocbot.init({
-    tocSelector: ".tocbot",
-    contentSelector: ".article-entry",
-    headingSelector: "h1, h2, h3, h4, h5, h6",
-    hasInnerContainers: true,
-    scrollSmooth: true,
-    scrollContainer: "main",
-    positionFixedSelector: ".tocbot",
-    positionFixedClass: "is-position-fixed",
-    fixedSidebarOffset: "auto",
-  });
-</script>
 
 <script src="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.js"></script>
 <link

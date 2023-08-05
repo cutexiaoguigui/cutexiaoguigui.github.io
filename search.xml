@@ -57,7 +57,7 @@
 <li>这时，你的邮箱应该会收到一封邮件，点击确认后就大功告成啦！</li>
 </ol>
 <h2 id="发送方法">发送方法</h2>
-<p>来到<a href="mail.google.com">谷歌邮箱</a>，点击写邮件，在<code>发件人(from)</code>处改为你的Cloudflare邮箱，再正常写邮件发送即可。</p>
+<p>来到<a href="https://mail.google.com">谷歌邮箱</a>，点击写邮件，在<code>发件人(from)</code>处改为你的Cloudflare邮箱，再正常写邮件发送即可。</p>
 ]]></content>
       <categories>
         <category>技术</category>
