@@ -228,6 +228,90 @@
 
     
     <article
+  id="post-Cloudflare-邮箱收发"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2023/08/05/Cloudflare-%E9%82%AE%E7%AE%B1%E6%94%B6%E5%8F%91/"
+    >Cloudflare 邮箱收发</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2023/08/05/Cloudflare-%E9%82%AE%E7%AE%B1%E6%94%B6%E5%8F%91/" class="article-date">
+  <time datetime="2023-08-05T04:00:00.000Z" itemprop="datePublished">2023-08-05</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1>Cloudflare 邮箱收发</h1>
+<p>周所周知，Cloudflare有一个邮件路由，可以配置你的域名邮箱，但是它只可以接受邮件，并不能发送邮件，那么，本期，我就教大家如何使用Cloudflare 邮箱实现发送功能！</p>
+<h2 id="准备">准备</h2>
+<p>想实现此功能，你需要：</p>
+<ol>
+<li>一个谷歌邮箱</li>
+<li>谷歌账号需要<a target="_blank" rel="noopener" href="https://myaccount.google.com/security" title="两步验证">开启两步验证</a></li>
+<li><a target="_blank" rel="noopener" href="https://dash.cloudflare.com/email">Cloudflare电子路由</a>开启</li>
+</ol>
+<h2 id="教学">教学</h2>
+<ol>
+<li>首先，我们先获取一个<a target="_blank" rel="noopener" href="https://myaccount.google.com/apppasswords" title="密码">专属应用密码</a>。
+<ul>
+<li>在 <code>选择应用</code> 列中选择 <code>其它（自定义名称）</code>，填入名称（什么都可以），点击 <code>生成</code>按钮</li>
+<li>然后，记住黄色框中的密码，此密码仅显示一次，一定要记牢</li>
+</ul>
+</li>
+<li>打开<a target="_blank" rel="noopener" href="https://mail.google.com/mail/#settings/accounts">Gmail账号和导入</a>，找到<code>用这个地址发送邮件</code>，点击添加其他电子邮件，就会弹出一个网页</li>
+<li>在弹出的网页中有两个输入框，第一个输入框输入你的名称，建议输入你的Cloudflare邮箱的前缀，  例： <a href="mailto:users@example.com">users@example.com</a> 就输入users，电子邮件地址就填你的Cloudflare邮箱。然后，点<code>下一步</code></li>
+</ol>
+<p><img src="https://cutexiaoguigui.eu.org/images/%E9%82%AE%E7%AE%B1.png" alt="示例"></p>
+<ol start="4">
+<li>接下来的页面请根据图面所示填写，SMTP服务器要修改成”<a target="_blank" rel="noopener" href="http://smtp.gmail.com">smtp.gmail.com</a>“，用户名写你的谷歌用户名，密码就写之前生成的应用密码。然后，点<code>添加账号</code></li>
+</ol>
+<p><img src="https://cutexiaoguigui.eu.org/images/%E9%82%AE%E7%AE%B11.png" alt="示例"></p>
+<ol start="5">
+<li>这时，你的邮箱应该会收到一封邮件，点击确认后就大功告成啦！</li>
+</ol>
+<h2 id="发送方法">发送方法</h2>
+<p>来到<a href="mail.google.com">谷歌邮箱</a>，点击写邮件，在<code>发件人(from)</code>处改为你的Cloudflare邮箱，再正常写邮件发送即可。</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cloudflare/" rel="tag">cloudflare</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AF%B4%E6%98%8E/" rel="tag">说明</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+  
+</article>
+
+    
+    <article
   id="post-Cloudflare-Tunnel"
   class="article article-type-post"
   itemscope
@@ -709,75 +793,14 @@
 </article>
 
     
-    <article
-  id="post-使用说明"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2023/04/29/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/"
-    >使用说明</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2023/04/29/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" class="article-date">
-  <time datetime="2023-04-28T23:00:00.000Z" itemprop="datePublished">2023-04-29</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E9%BE%9F%E4%B9%8B%E9%A3%9E%E5%AE%98%E6%96%B9/">龟之飞官方</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h1>龟之飞网站使用说明</h1>
-<p>龟之飞是一个博客网站，以下是如何使用该网站的详细说明：</p>
-<h2 id="访问网站">访问网站</h2>
-<ol>
-<li>打开任何一个支持浏览器的设备（如电脑、手机等）。</li>
-<li>打开浏览器应用程序（如Google Chrome、Safari、Firefox等）。</li>
-<li>在浏览器地址栏中输入 <a href="https://cutexiaoguigui.eu.org">https://cutexiaoguigui.eu.org</a> ，然后按下回车键。</li>
-<li>就可以访问 <em><strong>龟之飞</strong></em> 网站了。</li>
-</ol> 
-      <a class="article-more-link" href="/2023/04/29/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/"
-        >阅读全部</a
-      >
-       
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AE%98%E6%96%B9/" rel="tag">官方</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AF%B4%E6%98%8E/" rel="tag">说明</a></li></ul>
-
-    </footer>
-  </div>
-
-    
- 
-   
-  
-</article>
-
-    
   </article>
   
 
+  
+  <nav class="page-nav">
+    
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">下一页</a>
+  </nav>
   
 </section>
 </div>

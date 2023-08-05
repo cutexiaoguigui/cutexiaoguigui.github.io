@@ -17,7 +17,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>categories |  龟之飞</title>
+      <title>Cloudflare 邮箱收发 |  龟之飞</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/yuxuan.ico" />
@@ -70,12 +70,231 @@
       
     <main class="content on">
       <section class="outer">
+  <article
+  id="post-Cloudflare-邮箱收发"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  Cloudflare 邮箱收发
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2023/08/05/Cloudflare-%E9%82%AE%E7%AE%B1%E6%94%B6%E5%8F%91/" class="article-date">
+  <time datetime="2023-08-05T04:00:00.000Z" itemprop="datePublished">2023-08-05</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
+  </div>
   
-    <h1 class="page-type-title">分类</h1>
-    <div class="categories-box">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%8C%91%E6%88%98/">挑战</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%94%9F%E6%B4%BB/">生活</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%B0%9C%E9%A2%98/">谜题</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%BE%9F%E4%B9%8B%E9%A3%9E%E5%AE%98%E6%96%B9/">龟之飞官方</a><span class="category-list-count">3</span></li></ul>
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">396</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">1 分钟</span>
+        </span>
+    </span>
+</div>
+ 
     </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
   
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1>Cloudflare 邮箱收发</h1>
+<p>周所周知，Cloudflare有一个邮件路由，可以配置你的域名邮箱，但是它只可以接受邮件，并不能发送邮件，那么，本期，我就教大家如何使用Cloudflare 邮箱实现发送功能！</p>
+<h2 id="准备">准备</h2>
+<p>想实现此功能，你需要：</p>
+<ol>
+<li>一个谷歌邮箱</li>
+<li>谷歌账号需要<a target="_blank" rel="noopener" href="https://myaccount.google.com/security" title="两步验证">开启两步验证</a></li>
+<li><a target="_blank" rel="noopener" href="https://dash.cloudflare.com/email">Cloudflare电子路由</a>开启</li>
+</ol>
+<h2 id="教学">教学</h2>
+<ol>
+<li>首先，我们先获取一个<a target="_blank" rel="noopener" href="https://myaccount.google.com/apppasswords" title="密码">专属应用密码</a>。
+<ul>
+<li>在 <code>选择应用</code> 列中选择 <code>其它（自定义名称）</code>，填入名称（什么都可以），点击 <code>生成</code>按钮</li>
+<li>然后，记住黄色框中的密码，此密码仅显示一次，一定要记牢</li>
+</ul>
+</li>
+<li>打开<a target="_blank" rel="noopener" href="https://mail.google.com/mail/#settings/accounts">Gmail账号和导入</a>，找到<code>用这个地址发送邮件</code>，点击添加其他电子邮件，就会弹出一个网页</li>
+<li>在弹出的网页中有两个输入框，第一个输入框输入你的名称，建议输入你的Cloudflare邮箱的前缀，  例： <a href="mailto:users@example.com">users@example.com</a> 就输入users，电子邮件地址就填你的Cloudflare邮箱。然后，点<code>下一步</code></li>
+</ol>
+<p><img src="https://cutexiaoguigui.eu.org/images/%E9%82%AE%E7%AE%B1.png" alt="示例"></p>
+<ol start="4">
+<li>接下来的页面请根据图面所示填写，SMTP服务器要修改成”<a target="_blank" rel="noopener" href="http://smtp.gmail.com">smtp.gmail.com</a>“，用户名写你的谷歌用户名，密码就写之前生成的应用密码。然后，点<code>添加账号</code></li>
+</ol>
+<p><img src="https://cutexiaoguigui.eu.org/images/%E9%82%AE%E7%AE%B11.png" alt="示例"></p>
+<ol start="5">
+<li>这时，你的邮箱应该会收到一封邮件，点击确认后就大功告成啦！</li>
+</ol>
+<h2 id="发送方法">发送方法</h2>
+<p>来到<a href="mail.google.com">谷歌邮箱</a>，点击写邮件，在<code>发件人(from)</code>处改为你的Cloudflare邮箱，再正常写邮件发送即可。</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://cutexiaoguigui.eu.org/2023/08/05/Cloudflare-%E9%82%AE%E7%AE%B1%E6%94%B6%E5%8F%91/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cloudflare/" rel="tag">cloudflare</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AF%B4%E6%98%8E/" rel="tag">说明</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+    
+      <a href="/2023/07/05/Cloudflare-Tunnel/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">Cloudflare Tunnel</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.staticfile.org/valine/1.4.16/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "nxZIX7DVsRM5673PBSEF23JV-gzGzoHsz",
+    app_key: "m093iFPr0baQBQoy0EbvOF7w",
+    path: window.location.pathname,
+    avatar: "wavatar",
+    placeholder: "给我的文章评论一下吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+   
+  
+    
+</article>
+
 </section>
       <footer class="footer">
   <div class="outer">
@@ -220,6 +439,22 @@
 <script src="/js/lazyload.min.js"></script>
 
 <!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
 
 <script src="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.js"></script>
 <link
