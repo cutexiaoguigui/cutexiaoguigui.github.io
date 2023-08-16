@@ -9,7 +9,7 @@
 > 1. 我们有许多方面的研究，有blog，ai，网盘等。
 > 2. 见后续blog文章中有具体说明。  
 
-⭐若遇到任何问题，欢迎在wiki中与我们交流！😊
+⭐若遇到任何问题，欢迎交流！😊
 
 ## 界面  
 
@@ -65,7 +65,7 @@
 
 其它方面的研究：
 
-1. [bingAI](https://ai.cutexiaoguigui.eu.org/ "new bing")
+1. [bingAI](https://bing.cutexiaoguigui.eu.org/ "new bing")
 2. [github下载加速](https://github.fast.cutexiaoguigui.eu.org/ "加速")
 3. [网盘](https://pan.cutexiaoguigui.eu.org/ "网盘")
 

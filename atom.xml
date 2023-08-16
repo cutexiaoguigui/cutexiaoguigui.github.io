@@ -6,7 +6,7 @@
   <link href="https://cutexiaoguigui.eu.org/atom.xml" rel="self"/>
   
   <link href="https://cutexiaoguigui.eu.org/"/>
-  <updated>2023-08-05T09:29:30.813Z</updated>
+  <updated>2023-08-06T13:38:09.544Z</updated>
   <id>https://cutexiaoguigui.eu.org/</id>
   
   <author>
@@ -17,19 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title></title>
+    <link href="https://cutexiaoguigui.eu.org/2023/08/06/%E6%B5%8B%E8%AF%95/"/>
+    <id>https://cutexiaoguigui.eu.org/2023/08/06/%E6%B5%8B%E8%AF%95/</id>
+    <published>2023-08-06T13:37:47.796Z</published>
+    <updated>2023-08-06T13:38:09.544Z</updated>
+    
+    <content type="html"><![CDATA[<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mi>e</mi><mi>r</mi><mi>m</mi><mi>a</mi><mi>n</mi><mrow><mo fence="true">{</mo><mtable rowspacing="0.3599999999999999em" columnalign="left left" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mtext>adj. 德国的</mtext></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mtext>n. 德国人/德语</mtext></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow></mrow></mstyle></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">German\begin{cases}\text{adj. 德国的} &amp; \\\text{n. 德国人/德语} &amp; \end{cases}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:3.0000299999999998em;vertical-align:-1.25003em;"></span><span class="mord mathdefault">G</span><span class="mord mathdefault">e</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">m</span><span class="mord mathdefault">a</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size4">{</span></span><span class="mord"><span class="mtable"><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.69em;"><span style="top:-3.69em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord text"><span class="mord">adj. </span><span class="mord cjk_fallback">德国的</span></span></span></span><span style="top:-2.25em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord text"><span class="mord">n. </span><span class="mord cjk_fallback">德国人</span><span class="mord">/</span><span class="mord cjk_fallback">德语</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.19em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:1em;"></span><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.69em;"><span style="top:-3.69em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"></span></span><span style="top:-2.25em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.19em;"><span></span></span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;G&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Cloudflare 邮箱收发</title>
     <link href="https://cutexiaoguigui.eu.org/2023/08/05/Cloudflare-%E9%82%AE%E7%AE%B1%E6%94%B6%E5%8F%91/"/>
     <id>https://cutexiaoguigui.eu.org/2023/08/05/Cloudflare-%E9%82%AE%E7%AE%B1%E6%94%B6%E5%8F%91/</id>
     <published>2023-08-05T04:00:00.000Z</published>
-    <updated>2023-08-05T09:29:30.813Z</updated>
+    <updated>2023-08-16T02:24:42.376Z</updated>
     
-    <content type="html"><![CDATA[<h1>Cloudflare 邮箱收发</h1><p>周所周知，Cloudflare有一个邮件路由，可以配置你的域名邮箱，但是它只可以接受邮件，并不能发送邮件，那么，本期，我就教大家如何使用Cloudflare 邮箱实现发送功能！</p><h2 id="准备">准备</h2><p>想实现此功能，你需要：</p><ol><li>一个谷歌邮箱</li><li>谷歌账号需要<a href="https://myaccount.google.com/security" title="两步验证">开启两步验证</a></li><li><a href="https://dash.cloudflare.com/email">Cloudflare电子路由</a>开启</li></ol><h2 id="教学">教学</h2><ol><li>首先，我们先获取一个<a href="https://myaccount.google.com/apppasswords" title="密码">专属应用密码</a>。<ul><li>在 <code>选择应用</code> 列中选择 <code>其它（自定义名称）</code>，填入名称（什么都可以），点击 <code>生成</code>按钮</li><li>然后，记住黄色框中的密码，此密码仅显示一次，一定要记牢</li></ul></li><li>打开<a href="https://mail.google.com/mail/#settings/accounts">Gmail账号和导入</a>，找到<code>用这个地址发送邮件</code>，点击添加其他电子邮件，就会弹出一个网页</li><li>在弹出的网页中有两个输入框，第一个输入框输入你的名称，建议输入你的Cloudflare邮箱的前缀，  例： <a href="mailto:users@example.com">users@example.com</a> 就输入users，电子邮件地址就填你的Cloudflare邮箱。然后，点<code>下一步</code></li></ol><p><img src="https://cutexiaoguigui.eu.org/images/%E9%82%AE%E7%AE%B1.png" alt="示例"></p><ol start="4"><li>接下来的页面请根据图面所示填写，SMTP服务器要修改成”<a href="http://smtp.gmail.com">smtp.gmail.com</a>“，用户名写你的谷歌用户名，密码就写之前生成的应用密码。然后，点<code>添加账号</code></li></ol><p><img src="https://cutexiaoguigui.eu.org/images/%E9%82%AE%E7%AE%B12.png" alt="示例"></p><ol start="5"><li>这时，你的邮箱应该会收到一封邮件，点击确认后就大功告成啦！</li></ol><h2 id="发送方法">发送方法</h2><p>来到<a href="https://mail.google.com">谷歌邮箱</a>，点击写邮件，在<code>发件人(from)</code>处改为你的Cloudflare邮箱，再正常写邮件发送即可。</p>]]></content>
+    <content type="html"><![CDATA[<h1>Cloudflare 邮箱收发</h1><p>众所周知，Cloudflare有一个邮件路由，可以配置你的域名邮箱，但是它只可以接收邮件，并不能发送邮件，那么，本期，我就教大家如何使用Cloudflare 邮箱实现发送功能！</p><h2 id="准备">准备</h2><p>想实现此功能，你需要：</p><ol><li>一个谷歌邮箱</li><li>谷歌账号需要<a href="https://myaccount.google.com/security" title="两步验证">开启两步验证</a></li><li><a href="https://dash.cloudflare.com/email">Cloudflare电子路由</a>开启</li></ol><h2 id="教学">教学</h2><ol><li>首先，我们先获取一个<a href="https://myaccount.google.com/apppasswords" title="密码">专属应用密码</a>。<ul><li>在 <code>选择应用</code> 列中选择 <code>其它（自定义名称）</code>，填入名称（什么都可以），点击 <code>生成</code>按钮</li><li>然后，记住黄色框中的密码，此密码仅显示一次，一定要记牢</li></ul></li><li>打开<a href="https://mail.google.com/mail/#settings/accounts">Gmail账号和导入</a>，找到<code>用这个地址发送邮件</code>，点击添加其他电子邮件，就会弹出一个网页</li><li>在弹出的网页中有两个输入框，第一个输入框输入你的名称，建议输入你的Cloudflare邮箱的前缀，  例： <a href="mailto:users@example.com">users@example.com</a> 就输入users，电子邮件地址就填你的Cloudflare邮箱。然后，点<code>下一步</code></li></ol><p><img src="https://cutexiaoguigui.eu.org/images/%E9%82%AE%E7%AE%B1.png" alt="示例"></p><ol start="4"><li>接下来的页面请根据图面所示填写，SMTP服务器要修改成”<a href="http://smtp.gmail.com">smtp.gmail.com</a>“，用户名写你的谷歌用户名，密码就写之前生成的应用密码。然后，点<code>添加账号</code></li></ol><p><img src="https://cutexiaoguigui.eu.org/images/%E9%82%AE%E7%AE%B12.png" alt="示例"></p><ol start="5"><li>这时，你的邮箱应该会收到一封邮件，点击确认后就大功告成啦！</li></ol><h2 id="发送方法">发送方法</h2><p>来到<a href="https://mail.google.com">谷歌邮箱</a>，点击写邮件，在<code>发件人(from)</code>处改为你的Cloudflare邮箱，再正常写邮件发送即可。</p>]]></content>
     
     
       
       
     <summary type="html">&lt;h1&gt;Cloudflare 邮箱收发&lt;/h1&gt;
-&lt;p&gt;周所周知，Cloudflare有一个邮件路由，可以配置你的域名邮箱，但是它只可以接受邮件，并不能发送邮件，那么，本期，我就教大家如何使用Cloudflare 邮箱实现发送功能！&lt;/p&gt;
+&lt;p&gt;众所周知，Cloudflare有一个邮件路由，可以配置你的域名邮箱，但是它只可以接收邮件，并不能发送邮件，那么，本期，我就教大家如何使用Cloudflare 邮箱实现发送功能！&lt;/p&gt;
 &lt;h2 id=&quot;准备&quot;&gt;准备&lt;/h2&gt;</summary>
       
     
