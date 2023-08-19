@@ -5,6 +5,10 @@
   <subtitle>龟之飞博客</subtitle>
   <link href="https://cutexiaoguigui.eu.org/atom.xml" rel="self"/>
   
+  <icon>https://cutexiaoguigui.eu.org/favicon.ico</icon>
+  <logo>https://cutexiaoguigui.eu.org/favicon.ico</logo>
+
+
   <link href="https://cutexiaoguigui.eu.org/"/>
   <updated>2023-08-16T02:24:42.376Z</updated>
   <id>https://cutexiaoguigui.eu.org/</id>
