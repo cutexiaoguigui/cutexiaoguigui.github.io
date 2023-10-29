@@ -81,38 +81,146 @@
        
     <div class="article-entry" itemprop="articleBody">
        
-  <h1>友情链接</h1>
-<p>此链接基于<a target="_blank" rel="noopener" href="https://video.cutexiaoguigui.eu.org">视频解析站</a><strong>无法</strong>使用的情况下所给出的备用链接：</p>
-<ol>
-<li>
-<p><a target="_blank" rel="noopener" href="https://svip.bljiex.cc">https://svip.bljiex.cc</a></p>
-</li>
-<li>
-<p><a target="_blank" rel="noopener" href="https://jx.jsonplayer.com/player/?url=">https://jx.jsonplayer.com/player/?url=</a></p>
-</li>
-<li>
-<p><a target="_blank" rel="noopener" href="https://jx.xmflv.com/?url=">https://jx.xmflv.com/?url=</a></p>
-</li>
-<li>
-<p><a target="_blank" rel="noopener" href="https://search.ymck.me/index.php">https://search.ymck.me/index.php</a></p>
-</li>
-<li>
-<p><a target="_blank" rel="noopener" href="https://www.yemu.xyz">https://www.yemu.xyz</a></p>
-</li>
-<li>
-<p><a target="_blank" rel="noopener" href="https://vip.diaoyu18.com">https://vip.diaoyu18.com</a></p>
-</li>
-</ol>
-<p>注：</p>
-<ol>
-<li>
-<p>以上链接也有失效的可能，且<em><strong>链接与本站无关</strong></em>。</p>
-</li>
-<li>
-<p>若上方链接末尾处有<code>=</code>号，请在<code>=</code>号后加上须解析链接！</p>
-</li>
-</ol>
- 
+  <!DOCTYPE html>
+<html lang="zh-Hans">
+<style>
+    html, body {
+        width: 100%;
+        margin: 0;
+    }
+
+    html {
+        height: 100%;
+    }
+
+    body {
+        min-height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    p {
+        word-break: break-all;
+    }
+
+    @media (max-width: 500px) {
+        h1 {
+            margin-top: 80px;
+        }
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .block {
+        display: block;
+        position: relative;
+    }
+
+    .url {
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        position: relative;
+        width: 300px;
+        border: none;
+        border-bottom: 1px solid #bfbfbf;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    .bar {
+        content: '';
+        height: 2px;
+        width: 100%;
+        bottom: 0;
+        position: absolute;
+        background: #00bfb3;
+        transition: 0.2s ease transform;
+        -moz-transition: 0.2s ease transform;
+        -webkit-transition: 0.2s ease transform;
+        transform: scaleX(0);
+    }
+
+    .url:focus ~ .bar {
+        transform: scaleX(1);
+    }
+
+    .btn {
+        line-height: 38px;
+        background-color: #00bfb3;
+        color: #fff;
+        white-space: nowrap;
+        text-align: center;
+        font-size: 14px;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+        padding: 5px;
+        width: 160px;
+        margin: 30px 0;
+    }
+
+    .tips, .example {
+        color: #7b7b7b;
+        position: relative;
+        align-self: flex-start;
+        margin-left: 7.5em;
+    }
+
+    .tips > p:first-child::before {
+        position: absolute;
+        left: -5.5em;
+        content: '温馨提示：';
+        color: #7b7b7b
+    }
+
+    .example > p:first-child::before {
+        position: absolute;
+        left: -7.5em;
+        content: '合法输入示例：';
+        color: #7b7b7b
+    }
+</style>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script>
+        function toSubmit(e) {
+            e.preventDefault()
+            window.open(location.href.substr(0, location.href.lastIndexOf('/') + 1) + document.getElementsByName('q')[0].value);
+            return false
+        }
+    </script>
+    <title>GitHub 文件加速</title>
+</head>
+<body class="flex">
+<h1 style="margin-bottom: 50px">GitHub 文件加速</h1>
+<form action="./" method="get" style="padding-bottom: 40px" target="_blank" class="flex" onsubmit="toSubmit(event)">
+    <label class="block" style="width: fit-content">
+        <input class="block url" name="q" type="text" placeholder="键入Github文件链接"
+               pattern="^((https|http):\/\/)?(github\.com\/.+?\/.+?\/(?:releases|archive|blob|raw|suites)|((?:raw|gist)\.(?:githubusercontent|github)\.com))\/.+$" required>
+        <div class="bar"></div>
+    </label>
+    <input class="block btn" type="submit" value="下载">
+    <div class="tips"><p>GitHub文件链接有无协议头不影响加速，支持release、archive以及文件，更多用法、clone加速请参考<a href="https://cutexiaoguigui.eu.org/fastgithub-more.html/">此文档</a>。</p>
+        <p>release、archive使用cf加速，文件会跳转至JsDelivr</p>
+        <p>注意，不支持项目文件夹</p></div>
+    <div class="example">
+        <p>分支源码：https://github.com/gui/project/archive/master.zip</p>
+        <p>release源码：https://github.com/gui/project/archive/v0.1.0.tar.gz</p>
+        <p>release文件：https://github.com/gui/project/releases/download/v0.1.0/example.zip</p>
+        <p>分支文件：https://github.com/gui/project/blob/master/filename</p>
+    </div>
+</form>
+</body>
+</html> 
       <!-- reward -->
       
     </div>
@@ -176,7 +284,7 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://cutexiaoguigui.eu.org/video.html" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://cutexiaoguigui.eu.org/fastgithub.html" alt="微信分享二维码">
     </div>
 </div>
 
