@@ -17,7 +17,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>SSL与SLT |  龟之飞</title>
+      <title>Cloudflare Pages |  龟之飞</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/yuxuan.ico" />
@@ -71,7 +71,7 @@
     <main class="content on">
       <section class="outer">
   <article
-  id="post-SSL与SLT"
+  id="post-Cloudflare Pages"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -82,7 +82,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  SSL与SLT
+  Cloudflare Pages
 </h1>
  
 
@@ -90,8 +90,8 @@
     </header>
      
     <div class="article-meta">
-      <a href="/2023/10/06/SSL%E4%B8%8ESLT/" class="article-date">
-  <time datetime="2023-10-06T04:00:00.000Z" itemprop="datePublished">2023-10-06</time>
+      <a href="/article/Cloudflare%20Pages.html" class="article-date">
+  <time datetime="2023-06-10T01:00:00.000Z" itemprop="datePublished">2023-06-10</time>
 </a> 
   <div class="article-category">
     <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
@@ -102,7 +102,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">4.5k</span>
+            <span class="post-count">709</span>
         </span>
     </span>
 
@@ -111,7 +111,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">15 分钟</span>
+            <span class="post-count">2 分钟</span>
         </span>
     </span>
 </div>
@@ -126,106 +126,66 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <h1>SSL与SLT</h1>
-<p>大家好，好久不见！SSL与TLS保护了我们与网站之间的安全，是网上冲浪必不可少的工具。今天，我们来讲一讲&quot;<strong>SSL</strong>与<strong>SLT</strong>&quot;。</p>
-<h2 id="第一章：引言">第一章：引言</h2>
-<p>互联网已经成为人们日常生活和工作中不可或缺的部分，但是互联网上也存在着各种安全威胁，如黑客攻击、数据泄露、身份盗用等。为了保护互联网上的数据和通信不被窃听或篡改，需要使用一种能够提供安全保障的技术，即网络安全技术。网络安全技术可以分为两大类：网络层安全技术和应用层安全技术。网络层安全技术主要是指IPSec协议，它可以在IP层对数据包进行加密和认证，保护网络层之间的通信。应用层安全技术主要是指SSL/TLS协议，它可以在应用层对数据进行加密和认证，保护应用层之间的通信。</p>
-<p>SSL（Secure Sockets Layer）是由Netscape公司开发的一种安全协议，它可以在客户端和服务器之间建立一个安全通道，使得数据在传输过程中不被窃听或篡改。TLS（Transport Layer Security）是由IETF（Internet Engineering Task Force）制定的一种安全协议，它是基于SSL协议发展而来的，目前已经成为互联网上最广泛使用的安全协议之一。SSL/TLS协议可以支持多种应用层协议，如HTTP（Hypertext Transfer Protocol）、SMTP（Simple Mail Transfer Protocol）、FTP（File Transfer Protocol）等，从而实现了Web浏览、电子邮件、文件传输等多种网络服务的安全保护。</p>
-<p>SSL/TLS协议具有以下几个主要功能：</p>
+  <h1>网站部署至Cloudflare Pages</h1>
+<p>龟之飞目前可访问的网站是基于Github Pages服务实现的，听说Cloudflare Pages也很不错，自定义方面更强，便决定写篇文章带领大家操作一下。</p>
+<span id="more"></span>
+<h1>前情提要</h1>
+<ol>
+<li>
+<p>你需要先将你的hexo网站部署至Github Pages服务中，若成功，你应该可以通过“ <a target="_blank" rel="noopener" href="https://xn--eqr924avxo.github.io">https://用户名.github.io</a> ”来访问你的网站。</p>
+</li>
+<li>
+<p>拥有一个cloudflare账号。</p>
+</li>
+</ol>
+<h1>正式操作</h1>
 <ul>
-<li>认证：通过使用数字证书来验证通信双方的身份，防止冒充或欺骗。</li>
-<li>加密：通过使用对称加密和非对称加密来对数据进行加密，防止数据被窃听或泄露。</li>
-<li>完整性：通过使用散列函数和数字签名来对数据进行完整性检验，防止数据被篡改或损坏。</li>
-<li>协商：通过使用握手协议来协商通信双方的安全参数，如加密算法、密钥长度、散列算法等。</li>
+<li>
+<h2 id="文件配置">文件配置</h2>
+</li>
 </ul>
-<p>SSL/TLS协议的优势在于：</p>
+<blockquote>
+<p>Cloudflare并非Github，所以你在本地上传了hexo网站到Github后Cloudflare即使拉取了也会缺失部分渲染器之类的，我们需要自己重新安装。但Cloudflare只支持单行命令，所以我们只能现将构建命令提前编写好，再在Cloudflare中运行它。</p>
+</blockquote>
+<ol>
+<li>进入blog\source文件夹，这里应该有一个名为“_posts”的文件夹或其他文件夹。你需要先在文件资源管理器-&gt;查看-&gt;显示-&gt;勾选“显示文件后缀名”。</li>
+<li>完成后，我们新建一个文件叫“<code>build.sh</code>”，打开，输入构建信息，这里给出我的配置，如果你和我一样用的是<a target="_blank" rel="noopener" href="https://shen-yu.gitee.io/2019/ayer/">Ayer</a>主题的话，那你可以复制我的配置，否则请自行修改，不然到时候站点缺少了部分依赖就无法运行了。</li>
+</ol>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="comment">##配置环境</span></span><br><span class="line">npm install -g hexo-cli</span><br><span class="line"><span class="built_in">mkdir</span> hexo</span><br><span class="line"><span class="built_in">cd</span> hexo</span><br><span class="line">hexo init</span><br><span class="line">npm install</span><br><span class="line"><span class="built_in">rm</span> -rf <span class="built_in">source</span>/_posts</span><br><span class="line"><span class="built_in">mkdir</span> -p <span class="built_in">source</span>/_posts</span><br><span class="line"></span><br><span class="line"><span class="comment">##安装主题(可以修改成自己喜欢的主题)</span></span><br><span class="line">npm i hexo-theme-ayer -S</span><br><span class="line"></span><br><span class="line"><span class="comment">##安装实现网页搜索功能(看你的主题是否支持)(可选)</span></span><br><span class="line">npm install hexo-generator-searchdb --save</span><br><span class="line"></span><br><span class="line"><span class="comment">##安装文章置顶(可选)</span></span><br><span class="line">npm install hexo-generator-index-pin-top --save</span><br><span class="line"></span><br><span class="line"><span class="comment">##安装katex渲染器(可选)</span></span><br><span class="line">npm un hexo-renderer-marked -S &amp;&amp; npm i hexo-renderer-markdown-it-katex -S</span><br><span class="line"></span><br><span class="line"><span class="comment">##复制文章到指定目录</span></span><br><span class="line"><span class="built_in">cd</span> ../</span><br><span class="line"><span class="built_in">cp</span> -r `<span class="built_in">ls</span> | grep -v hexo | grep -v config.yml | xargs` hexo/source</span><br><span class="line"><span class="comment">##复制配置文件</span></span><br><span class="line"><span class="built_in">cp</span> config.yml hexo</span><br><span class="line"></span><br><span class="line"><span class="comment">##开始构建</span></span><br><span class="line"><span class="built_in">cd</span> hexo &amp;&amp; hexo g --config config.yml</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>编辑好后，在blog根目录右键，git bash here，输入“hexo g -d”，等待运行完毕后如果没有报错，来到Github查看你的仓库，里面应该已经有“<a target="_blank" rel="noopener" href="http://build.sh">build.sh</a>”这个文件了✨。</li>
+</ol>
 <ul>
-<li>透明性：SSL/TLS协议是在应用层和传输层之间的一个中间层，它不需要修改应用层协议的内容和格式，只需要在传输层之前对数据进行加密和解密，从而实现了安全通信的透明性。</li>
-<li>灵活性：SSL/TLS协议可以支持多种加密算法、散列算法和数字证书标准，可以根据不同的安全需求和环境选择合适的安全参数，从而实现了安全通信的灵活性。</li>
-<li>兼容性：SSL/TLS协议可以兼容不同的平台和环境，如浏览器、服务器、移动设备等，可以在不同的网络场景中实现安全通信，从而实现了安全通信的兼容性。</li>
+<li>
+<h2 id="cloudflare设置">Cloudflare设置</h2>
+</li>
 </ul>
-<h2 id="第二章：ssl-tls的基本概念">第二章：SSL/TLS的基本概念</h2>
-<p>SSL/TLS是一种安全协议，它可以在不安全的网络环境中，为通信双方提供身份认证、数据加密和完整性保护。为了实现这些功能，SSL/TLS涉及到了一些基本概念，如对称加密、非对称加密、数字证书、数字签名、散列函数等。本章将对这些概念进行介绍，并解释它们在SSL/TLS中的作用。</p>
-<p>2.1 对称加密</p>
-<p>对称加密是一种加密方法，它使用同一个密钥来加密和解密数据。通信双方必须事先共享这个密钥，并保证其机密性。对称加密的优点是速度快，适合大量数据的加密。对称加密的缺点是密钥的分发和管理比较困难，如果密钥泄露或被破解，通信的安全性就会受到威胁。常见的对称加密算法有DES、AES、RC4等。</p>
-<p>在SSL/TLS中，对称加密主要用于应用数据阶段，即通信双方已经建立了安全连接后，用于加密传输的数据。通信双方会在握手阶段协商一个对称加密算法和一个会话密钥，用于后续的数据加密。</p>
-<p>2.2 非对称加密</p>
-<p>非对称加密是一种加密方法，它使用一对不同的密钥来加密和解密数据。这对密钥分为公钥和私钥，公钥可以公开给任何人，私钥必须保持机密。使用公钥加密的数据只能用私钥解密，反之亦然。非对称加密的优点是可以实现身份认证和密钥交换，不需要事先共享任何秘密信息。非对称加密的缺点是速度慢，适合小量数据的加密。常见的非对称加密算法有RSA、ECC、DH等。</p>
-<p>在SSL/TLS中，非对称加密主要用于握手阶段，即通信双方建立安全连接之前，用于验证身份和协商会话密钥。通信双方会使用数字证书来交换公钥，并使用数字签名来验证消息的来源和完整性。</p>
-<p>2.3 数字证书</p>
-<p>数字证书是一种电子文件，它包含了公钥和其他相关信息，如持有者的身份、有效期、颁发者等。数字证书由一个可信的第三方机构（称为证书颁发机构或CA）签发，并由CA的私钥进行数字签名。数字证书的作用是让通信双方可以相互验证彼此的身份，并获取彼此的公钥。</p>
-<p>在SSL/TLS中，数字证书主要用于服务器端向客户端提供身份认证。客户端会检查服务器端发送的数字证书是否有效，是否由可信的CA签发，并是否与服务器端提供的公钥匹配。如果验证通过，客户端就可以信任服务器端，并使用其公钥进行后续的通信。</p>
-<p>2.4 数字签名</p>
-<p>数字签名是一种技术，它可以保证消息的来源和完整性。数字签名由消息发送者使用其私钥进行生成，并附在消息上发送给接收者。接收者可以使用发送者的公钥进行验证，如果验证通过，说明消息确实来自发送者，并且没有被篡改或损坏。</p>
-<p>在SSL/TLS中，数字签名主要用于握手阶段中的某些消息上，如服务器端发送给客户端的服务器密钥交换消息，客户端发送给服务器端的客户端密钥交换消息等。这些消息包含了通信双方协商的会话密钥或其相关信息，如果被篡改或损坏，会导致通信的安全性受到威胁。</p>
-<p>2.5 散列函数</p>
-<p>散列函数是一种函数，它可以将任意长度的输入转换为固定长度的输出，称为散列值或摘要。散列函数的特点是单向的，即不能从散列值反推出原始输入，而且对于不同的输入，散列值也不同，即具有抗碰撞性。常见的散列函数有MD5、SHA-1、SHA-256等。</p>
-<p>在SSL/TLS中，散列函数主要用于生成和验证消息认证码（MAC）。MAC是一种技术，它可以保证数据的完整性和来源认证。MAC由数据和一个共享密钥作为输入，使用散列函数进行生成，并附在数据上发送给接收者。接收者可以使用相同的共享密钥和散列函数进行验证，如果验证通过，说明数据没有被篡改或损坏，并且来自合法的发送者。</p>
-<h2 id="第三章：ssl-tls的工作流程">第三章：SSL/TLS的工作流程</h2>
-<p>SSL/TLS的工作流程可以分为两个阶段：握手阶段和应用数据阶段。握手阶段是建立连接的过程，主要用于协商加密算法、交换密钥和验证身份。应用数据阶段是传输数据的过程，主要用于加密和解密数据，以及检验数据的完整性。</p>
-<p>3.1 握手阶段</p>
-<p>握手阶段的目的是让客户端和服务器之间建立一个安全的通信通道，即一个加密套接字（Secure Socket）。为了实现这个目的，客户端和服务器需要完成以下四个步骤：</p>
+<ol>
+<li>登录你的Cloudflare账号，点击“Workers 和 Pages”，点击“构建应用程序”，选择“连接至git”，然后在那里登录Github，选择你的blog仓库(如图)，点击“开始设置”。</li>
+</ol>
+<p><img src="https://cutexiaoguigui.eu.org/images/%E6%BC%94%E7%A4%BA-2.png" alt="实例"></p>
+<ol start="2">
+<li>然后，严格按照我的示例输入！</li>
+</ol>
+<img src="https://cutexiaoguigui.eu.org/images/%E6%BC%94%E7%A4%BA-3.png" alt="实例" style="zoom:50%;" />
+<ol start="3">
+<li>接着按“保存”。</li>
+</ol>
 <ul>
-<li>第一步：客户端发送ClientHello消息。这个消息包含了客户端支持的SSL/TLS版本、加密套件（Cipher Suite）、压缩方法（Compression Method）和随机数（Random Number）。加密套件是一组加密算法的组合，包括对称加密算法、非对称加密算法和散列算法。压缩方法是用于减少数据传输量的方法。随机数是用于生成会话密钥（Session Key）的一部分。</li>
-<li>第二步：服务器发送ServerHello消息。这个消息包含了服务器选择的SSL/TLS版本、加密套件、压缩方法和随机数。服务器根据客户端发送的信息，从中选择一个合适的版本、加密套件和压缩方法，并生成自己的随机数。</li>
-<li>第三步：服务器发送Certificate消息、ServerKeyExchange消息和ServerHelloDone消息。Certificate消息包含了服务器的数字证书，用于证明服务器的身份和公钥。ServerKeyExchange消息包含了服务器生成的临时密钥，用于非对称加密算法中的密钥交换。ServerHelloDone消息表示服务器已经发送完毕，等待客户端回应。</li>
-<li>第四步：客户端发送ClientKeyExchange消息、ChangeCipherSpec消息和Finished消息。ClientKeyExchange消息包含了客户端生成的临时密钥，用于非对称加密算法中的密钥交换。ChangeCipherSpec消息表示客户端准备切换到协商好的加密套件和压缩方法。Finished消息包含了客户端对之前所有消息的散列值，用于验证握手过程的完整性。</li>
+<li>
+<h2 id="✨大功告成">✨大功告成！</h2>
+</li>
 </ul>
-<p>在完成这四个步骤后，客户端和服务器就可以根据各自的随机数和临时密钥，生成会话密钥，并使用协商好的加密套件和压缩方法，开始应用数据阶段。</p>
-<p>3.2 应用数据阶段</p>
-<p>应用数据阶段的目的是让客户端和服务器之间安全地传输数据，即应用层协议（Application Protocol）的数据。为了实现这个目的，客户端和服务器需要遵循以下两个原则：</p>
-<ul>
-<li>第一原则：对数据进行加密和解密。客户端在发送数据之前，先使用会话密钥对数据进行对称加密，并附上一个散列值作为认证标签（Authentication Tag）。服务器在接收到数据后，先使用会话密钥对数据进行对称解密，并根据散列值验证数据的完整性。</li>
-<li>第二原则：对数据进行分片和重组。客户端在发送数据之前，先将数据分成多个片段（Fragment），每个片段不超过16384字节，并为每个片段添加一个头部（Header），包含了片段类型（Type）、版本（Version）和长度（Length）。服务器在接收到数据后，先根据头部信息重组数据，并根据片段类型处理数据。</li>
-</ul>
-<p>在遵循这两个原则后，客户端和服务器就可以在加密套接字上，安全地传输应用层协议的数据，如HTTP、FTP、SMTP等。</p>
-<p>3.3 一个简单的示例：</p>
-<ul>
-<li>客户端向 <a target="_blank" rel="noopener" href="https://www.example.com">https://www.example.com</a> 发起一个HTTPS请求</li>
-<li>客户端发送ClientHello消息</li>
-<li>服务器发送ServerHello消息和数字证书</li>
-<li>客户端验证数字证书并提取公钥</li>
-<li>客户端生成PreMasterSecret并用公钥加密发送给服务器</li>
-<li>服务器用私钥解密PreMasterSecret并生成MasterSecret</li>
-<li>客户端和服务器都生成四个密钥</li>
-<li>客户端发送ChangeCipherSpec和Finished消息</li>
-<li>服务器发送ChangeCipherSpec和Finished消息</li>
-<li>客户端和服务器都验证Finished消息</li>
-<li>客户端使用客户端加密密钥对HTTP请求加密并发送给服务器</li>
-<li>服务器使用服务器解密密钥对HTTP请求解密并处理</li>
-<li>服务器使用服务器加密密钥对HTTP响应加密并发送给客户端</li>
-<li>客户端使用客户端解密密钥对HTTP响应解密并显示</li>
-<li>客户端或服务器发送CloseNotify消息</li>
-<li>客户端和服务器都收到CloseNotify消息后，断开连接</li>
-</ul>
-<h2 id="第四章：ssl-tls的实现方法">第四章：SSL/TLS的实现方法</h2>
-<p>SSL/TLS是一种通用的协议，它可以在不同的平台和环境中实现安全的网络通信。本章将介绍SSL/TLS在浏览器、服务器、移动设备等常见场景中的实现方法，并比较不同版本和标准的差异和兼容性。</p>
-<p>4.1 浏览器中的SSL/TLS</p>
-<p>浏览器是最常用的访问互联网的工具，它可以通过SSL/TLS与服务器建立安全的连接，从而保护用户的隐私和数据。浏览器中的SSL/TLS主要依赖于以下几个方面：</p>
-<ul>
-<li>浏览器内置的SSL/TLS库。浏览器内置了一些常用的SSL/TLS库，如OpenSSL、NSS、SChannel等，它们提供了SSL/TLS协议的核心功能，如加密、解密、验证等。</li>
-<li>浏览器内置的根证书。浏览器内置了一些权威的根证书机构（CA）的证书，如VeriSign、DigiCert等，它们用于验证服务器端的数字证书，以确保服务器的身份和可信度。</li>
-<li>浏览器提供的用户界面。浏览器提供了一些用户界面，如地址栏、锁图标、证书信息等，它们用于显示和提示用户当前连接的安全状态和相关信息。</li>
-</ul>
-<p>浏览器中的SSL/TLS工作流程如下：</p>
-<ul>
-<li>用户在浏览器中输入或点击一个HTTPS网址，浏览器向服务器发起一个SSL/TLS连接请求。</li>
-<li>服务器返回一个数字证书，包含服务器的公钥和签名等信息。</li>
-<li>浏览器验证服务器证书的有效性和合法性，如果通过，则生成一个随机数作为会话密钥，并用服务器的公钥加密后发送给服务器。</li>
-<li>服务器用自己的私钥解密会话密钥，并用会话密钥加密后发送一个握手完成消息给浏览器。</li>
-<li>浏览器收到握手完成消息后，显示一个锁图标在地址栏，并用会话密钥加密后发送应用数据给服务器。</li>
-<li>服务器用会话密钥解密应用数据，并返回响应数据给浏览器。</li>
-<li>浏览器和服务器重复上述步骤，直到连接结束或断开。</li>
-</ul>
-<p>浏览器中的SSL/TLS需要考虑以下几个问题：</p>
-<ul>
-<li>版本兼容性。不同版本的SSL/TLS协议有不同的特性和安全性，如SSL 3.0、TLS 1.0、TLS 1.1、TLS 1.2、TLS 1.3等。浏览器和服务器需要协商使用一个合适的版本来建立连接，否则可能导致连接失败或降低安全性。一般来说，应该尽量使用最新版本的协议，以获得最高的安全性和性能。</li>
-<li>加密套件选择。加密套件是指一组用于实现SSL/TLS协议功能的算法，如非对称加密算法、对称加密算法、散列函数等。不同的加密套件有不同的强度和效率，如RSA、ECC、AES、SHA等。浏览器和服务器需要协商使用一个合适的加密套件来建立连接，否则可能导致连接失败或降低安全性。一般来说，应该尽量使用最强最快的加密套件，以获得最高的安全性和性能。</li>
-<li>证书管理。证书是SSL/TLS协议中用于验证身份和信任的重要工具，它们需要由权威的CA机构签发和管理。浏览器需要定期更新内置的根证书，以避免过期或被撤销的证书。浏览器也需要检查服务器证书的有效期、域名、签名等信息，以避免伪造或篡改的证书。浏览器还需要提供一些选项和提示，让用户可以查看和控制证书的使用和信任。</li>
-</ul>
-<h2 id="第五章：总结与展望">第五章：总结与展望</h2>
-<p>SSL/TLS是一种成熟而有效的协议，它可以为客户端和服务器之间提供可靠的安全保障，防止数据被窃取或篡改。SSL/TLS也是一种不断发展和更新的协议，它可以适应不同的需求和环境，支持多种加密算法和认证方式。然而，SSL/TLS也存在一些局限和问题，如性能开销、配置错误、中间人攻击等，这些都需要进一步的研究和改进。此外，随着互联网技术的快速发展，SSL/TLS也面临着新的挑战和机遇，如量子计算、物联网、云计算等，这些都需要SSL/TLS进行相应的调整和创新。</p>
-<p>综上所述，SSL/TLS是一个很好的工具，它涉及到网络安全和加密通信的核心问题，也有着广泛的应用场景和前景。本文希望能够为大家提供一个清晰而全面的视角，让读者能够更好地理解和使用SSL/TLS协议。</p>
+<ol>
+<li>截止这里，一切就已经搞定了，只要访问它给你的网址就可以啦！</li>
+</ol>
+<p>成功的栗子：</p>
+<p><img src="https://cutexiaoguigui.eu.org/images/%E6%BC%94%E7%A4%BA-4.png" alt="成功的栗子"></p>
+<ol start="2">
+<li>以后，只要你有新的更新，只需直接“hexo g -d”。这样，Github和Cloudflare的Pages都会一起更新啦！</li>
+</ol>
+<p><strong>龟之飞Cloudflare版：<a target="_blank" rel="noopener" href="https://backup.cutexiaoguigui.eu.org/">https://backup.cutexiaoguigui.eu.org/</a> 。</strong></p>
+<p>✨祝大家成功！欢迎大家在评论区晒出自己的Cloudflare Pages网站哦！</p>
  
       <!-- reward -->
       
@@ -290,12 +250,12 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://cutexiaoguigui.eu.org/2023/10/06/SSL%E4%B8%8ESLT/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://cutexiaoguigui.eu.org/article/Cloudflare%20Pages.html" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>  
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BB%8B%E7%BB%8D/" rel="tag">介绍</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AF%B4%E6%98%8E/" rel="tag">说明</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cloudflare/" rel="tag">cloudflare</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AF%B4%E6%98%8E/" rel="tag">说明</a></li></ul>
 
     </footer>
   </div>
@@ -303,10 +263,19 @@
    
   <nav class="article-nav">
     
+      <a href="/article/%E8%AE%BA%E5%B9%BB%E6%96%B9%EF%BC%9F.html" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            论幻方？
+          
+        </div>
+      </a>
     
-      <a href="/2023/08/05/Cloudflare-%E9%82%AE%E7%AE%B1%E6%94%B6%E5%8F%91/" class="article-nav-link">
+    
+      <a href="/article/hexo%E7%AB%99%E7%82%B9seo%E4%BC%98%E5%8C%96.html" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">Cloudflare 邮箱收发</div>
+        <div class="article-nav-title">hexo站点seo优化</div>
       </a>
     
   </nav>
@@ -458,7 +427,7 @@
     </li>
     
     <li class="nav-item">
-      <a class="nav-item-link" href="/2023/04/29/%E5%85%B3%E4%BA%8E%E6%88%91/">关于我</a>
+      <a class="nav-item-link" href="/article/%E5%85%B3%E4%BA%8E%E6%88%91.html">关于我</a>
     </li>
     
   </ul>
