@@ -26,6 +26,176 @@
       </tags>
   </entry>
   <entry>
+    <title>编写Dockerfile</title>
+    <url>/article/%E7%BC%96%E5%86%99Dockerfile.html</url>
+    <content><![CDATA[<h1>Dockerfile编写指南</h1>
+<p>上期给大家讲了Docker入门，今天我们继续讲Dockerfile如何编写。</p>
+<h2 id="简介">简介</h2>
+<p>Dockerfile是一个文本文件，它包含了一系列的指令，用来描述如何从一个基础镜像构建出一个新的镜像。每一条指令都会在基础镜像上创建一个新的层，并且对其进行一些修改，比如安装软件包、设置环境变量、复制文件、运行命令等。最终，所有的层会被合并成一个单一的镜像，这就是我们定制的目标镜像。</p>
+<p>使用Dockerfile的好处有很多，比如：</p>
+<ul>
+<li>可以实现镜像的自动化构建和版本控制，方便重复使用和共享。</li>
+<li>可以减少镜像的大小和复杂度，提高镜像的可读性和可维护性。</li>
+<li>可以避免手动操作镜像的错误和不一致，保证镜像的质量和安全性。</li>
+</ul>
+<h2 id="语法和结构">语法和结构</h2>
+<p>Dockerfile的基本语法和结构如下：</p>
+<ul>
+<li>每一行代表一条指令，指令的格式为 <code>INSTRUCTION arguments</code>，其中 <code>INSTRUCTION</code> 是不区分大小写的关键字，<code>arguments</code> 是指令的参数，可以有多个，用空格分隔。</li>
+<li>每一条指令都会在上一条指令的结果上创建一个新的层，并且对其进行修改，最终形成一个新的镜像。</li>
+<li>指令可以有多种形式，比如：
+<ul>
+<li><code>#</code> 开头的行表示注释，会被忽略。</li>
+<li><code>FROM</code> 指定基础镜像，必须是第一条指令，可以有多个，表示多阶段构建。</li>
+<li><code>LABEL</code> 添加元数据，比如作者、版本、描述等，可以有多个，每个 <code>LABEL</code> 是一个键值对，用等号连接。</li>
+<li><code>RUN</code> 执行命令，可以有多个，每个 <code>RUN</code> 可以执行多个命令，用 <code>&amp;&amp;</code> 连接，或者用反斜杠换行。</li>
+<li><code>CMD</code> 指定容器启动时的默认命令，可以有多个，但只有最后一个会生效，可以被 <code>docker run</code> 的参数覆盖。</li>
+<li><code>ENTRYPOINT</code> 指定容器启动时的固定命令，可以有多个，但只有最后一个会生效，不会被 <code>docker run</code> 的参数覆盖，而是会追加在后面。</li>
+<li><code>EXPOSE</code> 声明容器内部的端口，可以有多个，不会自动映射到宿主机，需要用 <code>-p</code> 或 <code>-P</code> 参数指定。</li>
+<li><code>ENV</code> 设置环境变量，可以有多个，每个 <code>ENV</code> 是一个键值对，用空格分隔，或者用等号连接。</li>
+<li><code>ADD</code> 复制文件或目录到容器内部，可以有多个，可以是本地路径，也可以是URL或压缩包，如果是压缩包，会自动解压。</li>
+<li><code>COPY</code> 复制文件或目录到容器内部，可以有多个，只能是本地路径，不会自动解压。</li>
+<li><code>WORKDIR</code> 设置工作目录，可以有多个，后面的指令会在该目录下执行，如果目录不存在，会自动创建。</li>
+<li><code>VOLUME</code> 创建数据卷，可以有多个，用来持久化容器内部的数据，或者与宿主机或其他容器共享数据。</li>
+<li><code>USER</code> 设置用户，可以有多个，后面的指令会以该用户的身份执行，如果用户不存在，会报错。</li>
+<li><code>ARG</code> 定义构建参数，可以有多个，可以在 <code>docker build</code> 时用 <code>--build-arg</code> 参数传递，也可以有默认值。</li>
+<li><code>ONBUILD</code> 定义触发指令，可以有多个，当该镜像被用作其他镜像的基础镜像时，会执行该指令。</li>
+<li><code>STOPSIGNAL</code> 设置停止信号，只能有一个，用来终止容器，可以是信号名，比如 <code>SIGKILL</code>，也可以是信号值，比如 <code>9</code>。</li>
+<li><code>HEALTHCHECK</code> 设置健康检查，只能有一个，用来检测容器是否正常运行，可以是 <code>CMD</code> 或 <code>CMD-SHELL</code>，也可以是 <code>NONE</code> 表示不检查。</li>
+<li><code>SHELL</code> 设置默认的shell，只能有一个，用来执行后面的 <code>RUN</code>、<code>CMD</code>、<code>ENTRYPOINT</code> 等指令，可以是任何可执行的程序，比如 <code>/bin/bash</code>、<code>/bin/sh</code>、<code>/bin/powershell</code> 等。</li>
+</ul>
+</li>
+<li>指令的参数可以有多种形式，比如：
+<ul>
+<li>Shell形式，比如 <code>RUN apt-get update &amp;&amp; apt-get install -y curl</code>，会在默认的shell中执行，可以使用环境变量和通配符等特性，但是也会有一些潜在的问题，比如空格、引号、转义符等。</li>
+<li>Exec形式，比如 <code>RUN [&quot;apt-get&quot;, &quot;update&quot;]</code>，会直接执行指定的程序，不会经过shell的解析，可以避免一些潜在的问题，但是也会失去一些shell的特性，比如环境变量和通配符等。</li>
+<li>JSON数组形式，比如 <code>CMD [&quot;echo&quot;, &quot;Hello World&quot;]</code>，会被解析为JSON数组，每个元素都是一个字符串，不会被转义或引用，一般用于 <code>CMD</code>、<code>ENTRYPOINT</code>、<code>RUN</code> 等指令。</li>
+<li>键值对形式，比如 <code>LABEL version=&quot;1.0&quot;</code>，会被解析为一个键值对，键和值都是字符串，可以用引号包围，也可以不用，一般用于 <code>LABEL</code>、<code>ENV</code>、<code>ARG</code> 等指令。</li>
+</ul>
+</li>
+</ul>
+<h2 id="问题">问题</h2>
+<p>编写Dockerfile时，有一些最佳实践和常见问题需要注意，比如：</p>
+<ul>
+<li>尽量使用官方的或者可信的基础镜像，避免使用不明来源或者过时的镜像，以保证镜像的质量和安全性。</li>
+<li>尽量使用精简的基础镜像，比如 <code>alpine</code>、<code>debian-slim</code> 等，以减少镜像的大小和复杂度，提高镜像的启动速度和运行效率。</li>
+<li>尽量合并多个 <code>RUN</code> 指令，使用 <code>&amp;&amp;</code> 连接或者反斜杠换行，以减少镜像的层数和大小，避免产生无用的中间层和缓存。</li>
+<li>尽量删除多余的文件和缓存，比如 <code>apt-get clean</code>、<code>rm -rf /var/lib/apt/lists/*</code> 等</li>
+</ul>
+<h2 id="实践">实践</h2>
+<p>以下作者给大家2个实例，帮助大家快速上手。</p>
+<ol>
+<li>Python</li>
+</ol>
+<h3 id="情景">情景</h3>
+<ul>
+<li>你想构建一个Python的Web应用，使用Flask框架和Gunicorn服务器。</li>
+<li>你的应用代码在 <code>app</code> 目录下，主文件是 <code>app.py</code>，依赖文件是 <code>requirements.txt</code>。</li>
+<li>你的应用需要监听 <code>8000</code> 端口，并且使用 <code>4</code> 个工作进程。</li>
+</ul>
+<h3 id="编写">编写</h3>
+<figure class="highlight dockerfile"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用官方的Python3.9镜像作为基础镜像</span></span><br><span class="line"><span class="keyword">FROM</span> python:<span class="number">3.9</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置工作目录为/app</span></span><br><span class="line"><span class="keyword">WORKDIR</span><span class="language-bash"> /app</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 复制当前目录下的所有文件到/app目录</span></span><br><span class="line"><span class="keyword">COPY</span><span class="language-bash"> . /app</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装依赖包</span></span><br><span class="line"><span class="keyword">RUN</span><span class="language-bash"> pip install -r requirements.txt</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 声明容器内部的端口</span></span><br><span class="line"><span class="keyword">EXPOSE</span> <span class="number">8000</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置环境变量，指定Gunicorn的配置</span></span><br><span class="line"><span class="keyword">ENV</span> GUNICORN_CMD_ARGS=<span class="string">&quot;--bind=0.0.0.0:8000 --workers=4&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置容器启动时的默认命令，运行Gunicorn服务器，加载app.py文件</span></span><br><span class="line"><span class="keyword">CMD</span><span class="language-bash"> [<span class="string">&quot;gunicorn&quot;</span>, <span class="string">&quot;app:app&quot;</span>]</span></span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>PHP-81</li>
+</ol>
+<h3 id="情景">情景</h3>
+<ul>
+<li>你想构建一个PHP-81的Web应用，使用example框架，这是一个在线文件管理系统。</li>
+<li>你的应用代码在GitHub上，需要下载并解压到/app目录，然后赋予所有文件可读写执行的权限。</li>
+<li>你的应用使用sqlite数据库，不需要指定端口。</li>
+</ul>
+<h3 id="编写">编写</h3>
+<figure class="highlight dockerfile"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用官方的PHP-81镜像作为基础镜像</span></span><br><span class="line"><span class="keyword">FROM</span> php:<span class="number">8.1</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装sqlite扩展</span></span><br><span class="line"><span class="keyword">RUN</span><span class="language-bash"> docker-php-ext-install pdo_sqlite</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置工作目录为/app</span></span><br><span class="line"><span class="keyword">WORKDIR</span><span class="language-bash"> /app</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载并解压Kodbox框架到/app目录</span></span><br><span class="line"><span class="keyword">RUN</span><span class="language-bash"> wget https://github.com/someone/where/example/main.zip \</span></span><br><span class="line"><span class="language-bash">    &amp;&amp; unzip main.zip \</span></span><br><span class="line"><span class="language-bash">    &amp;&amp; <span class="built_in">mv</span> kodbox-main/* . \</span></span><br><span class="line"><span class="language-bash">    &amp;&amp; <span class="built_in">rm</span> -rf main.zip kodbox-main</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 赋予所有文件可读写执行的权限</span></span><br><span class="line"><span class="keyword">RUN</span><span class="language-bash"> <span class="built_in">chmod</span> -Rf 777 ./*</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 声明容器内部的端口</span></span><br><span class="line"><span class="keyword">EXPOSE</span> <span class="number">80</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置容器启动时的默认命令，运行PHP内置服务器，加载index.php文件</span></span><br><span class="line"><span class="keyword">CMD</span><span class="language-bash"> [<span class="string">&quot;php&quot;</span>, <span class="string">&quot;-S&quot;</span>, <span class="string">&quot;0.0.0.0:80&quot;</span>, <span class="string">&quot;-t&quot;</span>, <span class="string">&quot;/app&quot;</span>, <span class="string">&quot;index.php&quot;</span>]</span></span><br></pre></td></tr></table></figure>
+<h2 id="总结">总结</h2>
+<p>以上便是Dockerfile的简单入门，学习一门语言不会过于简单，还是要多下功夫。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>说明</tag>
+        <tag>Docker</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Docker入门</title>
+    <url>/article/Docker%E5%85%A5%E9%97%A8.html</url>
+    <content><![CDATA[<h1>Docker入门到精通</h1>
+<h2 id="什么是docker？">什么是Docker？</h2>
+<p>Docker是一种开源的软件平台，它可以让你在<strong>容器</strong>中运行和管理<strong>应用程序</strong>。容器是一种轻量级的虚拟化技术，它可以让你把应用程序和它所需要的所有依赖（如库、配置文件、环境变量等）打包成一个可移植的单元，然后在任何支持Docker的机器上运行，比如：</p>
+<ol>
+<li>本地的电脑</li>
+<li>云端的服务器</li>
+<li>代码托管平台</li>
+<li>树莓派等嵌入式设备</li>
+</ol>
+<p>使用Docker的好处有很多，比如：</p>
+<ul>
+<li>提高开发和部署的效率和一致性，因为你可以在不同的环境中使用相同的容器，而不用担心兼容性和配置问题。</li>
+<li>节省资源和成本，因为你可以在一台机器上运行多个容器，而不用为每个应用程序分配一个完整的操作系统和硬件资源。</li>
+<li>增强安全性和隔离性，因为每个容器都是相互独立的，不会相互影响，也不会影响宿主机的系统和文件。</li>
+<li>促进协作和共享，因为你可以使用Docker Hub等公共或私有的仓库，来存储和分发你的容器镜像，让其他人可以轻松地获取和使用你的应用程序。</li>
+</ul>
+<h2 id="安装和使用docker">安装和使用Docker</h2>
+<p>要使用Docker，你首先需要在你的机器上安装Docker Engine，这是一个负责创建和运行容器的核心组件。你可以根据你的操作系统和硬件架构，从<a href="https://www.docker.com/get-started">Docker官网</a>下载合适的安装包，或者使用命令行工具来安装。如果你只在代码托管平台上运行，可以看我的下一篇的教程Dockerfile</p>
+<p>安装完成后，你可以使用<code>docker</code>命令来操作Docker Engine，比如：</p>
+<ul>
+<li><code>docker run</code>：运行一个容器</li>
+<li><code>docker ps</code>：查看正在运行的容器</li>
+<li><code>docker stop</code>：停止一个容器</li>
+<li><code>docker rm</code>：删除一个容器</li>
+<li><code>docker images</code>：查看本地的容器镜像</li>
+<li><code>docker pull</code>：从远程仓库拉取一个容器镜像</li>
+<li><code>docker push</code>：向远程仓库推送一个容器镜像</li>
+<li><code>docker build</code>：根据Dockerfile构建一个容器镜像</li>
+<li><code>docker tag</code>：给一个容器镜像打上标签</li>
+<li><code>docker login</code>：登录到一个远程仓库</li>
+<li><code>docker logout</code>：登出一个远程仓库</li>
+</ul>
+<p>如果记不住，可以输入<code>docker --help</code>或<code>docker &lt;command&gt; --help</code>来查看更多的命令和选项。</p>
+<h2 id="创建和运行容器">创建和运行容器</h2>
+<p>首先，我们来创建和运行一个简单的容器，让它打印出&quot;Hello, Docker!&quot;的信息。</p>
+<p>首先，我们需要一个Dockerfile，这是一个文件，它记录了如何构建一个容器镜像。我们可以使用任何文本编辑器来创建一个名为<code>Dockerfile</code>的文件，然后在里面写入以下内容：</p>
+<figure class="highlight dockerfile"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用官方的Python 3.9镜像作为基础镜像</span></span><br><span class="line"><span class="keyword">FROM</span> python:<span class="number">3.9</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置工作目录为/app</span></span><br><span class="line"><span class="keyword">WORKDIR</span><span class="language-bash"> /app</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 将当前目录下的hello.py文件复制到/app目录下</span></span><br><span class="line"><span class="keyword">COPY</span><span class="language-bash"> hello.py .</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 运行hello.py文件</span></span><br><span class="line"><span class="keyword">CMD</span><span class="language-bash"> [<span class="string">&quot;python&quot;</span>, <span class="string">&quot;hello.py&quot;</span>]</span></span><br></pre></td></tr></table></figure>
+<p>然后，我们需要一个<code>hello.py</code>文件，这是一个Python脚本，它打印出&quot;Hello, Docker!&quot;的信息。我们可以在Dockerfile文件的同一个目录下创建一个名为<code>hello.py</code>的文件，然后在里面编写以下内容：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 打印出&quot;Hello, Docker!&quot;的信息</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Hello, Docker!&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p>接下来，我们可以使用<code>docker build</code>命令来根据Dockerfile构建一个容器镜像，比如：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 在当前目录下执行</span></span><br><span class="line"><span class="comment"># -t选项用来给镜像打上一个标签，格式为&lt;仓库名&gt;/&lt;镜像名&gt;:&lt;标签名&gt;</span></span><br><span class="line"><span class="comment"># .表示使用当前目录下的Dockerfile</span></span><br><span class="line">docker build -t myrepo/hello:latest .</span><br></pre></td></tr></table></figure>
+<p>如果一切顺利，我们就可以在本地的容器镜像列表中看到我们刚刚构建的镜像，比如：</p>
+<p>查看本地的容器镜像列表：<code>docker images</code></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 输出结果类似于</span></span><br><span class="line">REPOSITORY    TAG       IMAGE ID       CREATED          SIZE</span><br><span class="line">myrepo/hello  latest    7a0a8c6f0a0f   10 seconds ago   885MB</span><br><span class="line">python        3.9       1e9f5a8f7b4a   2 weeks ago      885MB</span><br></pre></td></tr></table></figure>
+<p>最后，我们可以使用<code>docker run</code>命令来运行一个基于我们的镜像的容器，比如：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 运行一个容器</span></span><br><span class="line"><span class="comment"># --rm选项表示容器退出后自动删除</span></span><br><span class="line">docker run --<span class="built_in">rm</span> myrepo/hello:latest</span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出结果类似于</span></span><br><span class="line">Hello, Docker!</span><br></pre></td></tr></table></figure>
+<p>恭喜你，你已经成功地创建和运行了一个简单的容器！</p>
+<h2 id="如何进一步学习和使用docker？">如何进一步学习和使用Docker？</h2>
+<p>这篇文章只是对Docker的一个简单的介绍，Docker还有很多更高级和更强大的功能和特性，比如：</p>
+<ul>
+<li>Docker Compose：用来定义和运行多个容器的应用程序</li>
+<li>Docker Swarm：用来在多个机器上部署和管理容器的集群</li>
+<li>Docker Machine：用来在远程的虚拟机或云端的服务器上安装和管理Docker Engine</li>
+<li>Docker Network：用来创建和管理容器之间的网络连接</li>
+<li>Docker Volume：用来创建和管理容器之间的数据卷</li>
+<li>Docker Registry：用来存储和分发容器镜像的服务</li>
+<li>Docker Desktop：用来在Windows和Mac上提供一个图形化的界面和工具来操作Docker</li>
+<li>Docker CLI：用来在命令行中操作Docker的工具</li>
+<li>Docker SDK：用来在Python、Go等语言中编程操作Docker的库</li>
+<li>Docker API：用来提供RESTful的接口来操作Docker的服务</li>
+</ul>
+<p>如果你想要进一步学习和使用Docker，你可以参考以下的资源：</p>
+<ul>
+<li>[Docker官网](<a href="https://www.docker.com">https://www.docker.com</a>：提供了Docker的下载、安装、文档、教程、博客、社区等信息</li>
+<li>[Docker Hub](<a href="https://hub.docker.com">https://hub.docker.com</a>：提供了数以百万计的公开的容器镜像，以及私有的仓库服务</li>
+</ul>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>说明</tag>
+        <tag>Docker</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>SSL与SLT</title>
     <url>/article/SSL%E4%B8%8ESLT.html</url>
     <content><![CDATA[<h1>SSL与SLT</h1>
